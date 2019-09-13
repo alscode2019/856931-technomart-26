@@ -44,40 +44,37 @@
         </ul>
         <h1>Перфораторы</h1>
         <section>
-            <h2>Каталог прфораторов</h2>
-            <!--Здесь будет секция фильтров-->
-            <section>
-                <div>
-                    <h3>Фильтр</h3>
-                    <h4>Цена</h4>
-                    <form><input type="range"></form>
-                </div>
-                <!--Здесь будет форма выбора производителей-->
-                <div>
-                    <h4>Производители:</h4>
-                    <form>
-                        <ul>
-                            <li><input type="checkbox">BOSH</li>
-                            <li><input type="checkbox">ИНТЕРСКОЛ</li>
-                            <li><input type="checkbox">MAKITA</li>
-                            <li><input type="checkbox">DEWALT</li>
-                            <li><input type="checkbox">HITACHI</li>
-                        </ul>
-                    </form>
-                </div>
-                <!--Здесь будет форма выбора по типу питания-->
-                <div>
-                    <h4>Питание:</h4>
-                    <form>
-                        <ul>
-                            <li><input type="radio">Аккумуляторные</li>
-                            <li><input type="radio">Сетевые</li>
-                        </ul>
-                    </form>
-                </div>
-                <button>Показать</button>
+            <h2>Каталог перфораторов</h2>
+            <!--Здесь будет форма фильтров-->
+            <form action="">
+                    <!--Фильтр цены-->
+                        <fieldset>
+                            <h3>Фильтр</h3>
+                            <h4>Цена</h4>
+                            <input type="range">
+                        </fieldset>
+                    <!--Выбор производителей-->
+                    <fieldset>
+                            <h4>Производители:</h4>
+                            <ul>
+                                    <li><input type="checkbox">BOSH</li>
+                                    <li><input type="checkbox">ИНТЕРСКОЛ</li>
+                                    <li><input type="checkbox">MAKITA</li>
+                                    <li><input type="checkbox">DEWALT</li>
+                                    <li><input type="checkbox">HITACHI</li>
+                             </ul>
+                     </fieldset>
+                     <!--Выбор по типу питания-->
+                     <fieldset>
+                            <h4>Питание:</h4>
+                                <ul>
+                                    <li><input type="radio">Аккумуляторные</li>
+                                    <li><input type="radio">Сетевые</li>
+                                </ul>
+                    </fieldset>
+                </form>
+                <button type="submit">Показать</button>
             </section>
-
             <!--Здесь будет меню сортировки товаров-->
             <div>
                 <h3>Сортировка</h3>
@@ -94,7 +91,6 @@
                 </ul>
             </div>
 
-        </section>
         <section>
             <h2>Карточки товаров</h2>
             <ul>
