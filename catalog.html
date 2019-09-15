@@ -8,7 +8,7 @@
 
 <body>
     <header>
-        <div><a href="">ТЕХНОМАРТ</a></div>
+        <div><a href="index.html">ТЕХНОМАРТ</a></div>
         <ul>
             <li><a href="">Поиск:</a></li>
             <li><a href="">Закладки:</a></li>
@@ -37,7 +37,7 @@
     </header>
     <main>
         <ul>
-            <li><a href="index.html"><img src="img/home"></a></li>
+            <li><a href="index.html"><img src="img/home" alt="На главную"></a></li>
             <li><a href="">каталог</a></li>
             <li><a href="">инструмент</a></li>
             <li><a>перфораторы</a></li>
@@ -46,12 +46,13 @@
         <section>
             <h2>Каталог перфораторов</h2>
             <!--Здесь будет форма фильтров-->
-            <form action="">
+            <form action="file.php">
                     <!--Фильтр цены-->
                         <fieldset>
                             <h3>Фильтр</h3>
                             <h4>Цена</h4>
                             <input type="range">
+                            <span>0</span>-<span>30000</span>
                         </fieldset>
                     <!--Выбор производителей-->
                     <fieldset>
@@ -234,14 +235,17 @@
     </main>
     <footer>
         <section>
-            <div>ТЕХНОМАРТ</div>
-            <ul>
-                <li><a href="">Компания</a></li>
-                <li><a href="">Новости</a></li>
-                <li><a href="">Каталог</a></li>
-                <li><a href="">Доставка</a></li>
-                <li><a href="">Контакты</a></li>
-            </ul>
+           <h2>Контакты и навигация</h2>
+            <div><a href="index.html">ТЕХНОМАРТ</a></div>
+            <nav>
+                <ul>
+                    <li><a href="">Компания</a></li>
+                    <li><a href="">Новости</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="">Доставка</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </nav>
             <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
             <a href="tel:+78125550555">+7 (812) 555-05-55</a>
             <ul>
@@ -252,6 +256,7 @@
             </ul>
         </section>
         <section>
+           <h2>Обратная связь</h2>
             <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
             <ul>
                 <li><a href="">в контакте</a></li>
@@ -260,7 +265,7 @@
             </ul>
             <p>Обратная связь: <a href="">mail@htmlacademy.ru</a>
             </p>
-            <p>Разработано — <a href="https://htmlacademy.ru">htmlacademy.ru</a></p>
+            <p>Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
         </section>
     </footer>
 </body></html>
