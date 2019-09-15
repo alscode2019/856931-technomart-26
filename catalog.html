@@ -8,20 +8,22 @@
 
 <body>
     <header>
-        <div><a href="index.html">ТЕХНОМАРТ</a></div>
+        <a href=""><img src="img/Logo.png" alt="Логотип">ТЕХНОМАРТ</a>
+        <img src="img/icon-search.svg" alt="Поиск">
         <ul>
             <li><a href="">Поиск:</a></li>
-            <li><a href="">Закладки:</a></li>
-            <li><a href="">Корзина:</a></li>
+            <li><img src="img/icon-bookmark.svg" alt="Закладки"><a href="">Закладки:</a></li>
+            <li><img src="img/icon-cart.svg" alt="Корзина"><a href="">Корзина:</a></li>
             <li><a href="">Оформить заказ</a></li>
         </ul>
         <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        <img src="img/icon-phone.svg" alt="Телефон">
         <a href="tel:+78125550555">+7 (812) 555-05-55</a>
         <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-        <!--Здесь будет поле формы -->
+        <div><a href=""><img src="img/icon-user.svg" alt="Ваша страница"></a>Равшан Джамшутович<a href=""><img src="img/icon-logout.svg" alt="Выход из вашей страницы"></a></div>
         <ul>
-            <li><button>Мои заказы</button></li>
-            <li><button>Личный кабинет</button></li>
+            <li><a href="">Мои заказы</a></li>
+            <li><a href="">Личный кабинет</a></li>
         </ul>
         <nav>
             <ul>
@@ -37,7 +39,7 @@
     </header>
     <main>
         <ul>
-            <li><a href="index.html"><img src="img/home" alt="На главную"></a></li>
+            <li><a href="index.html"><img src="img/icon-home.svg" alt="На главную"></a></li>
             <li><a href="">каталог</a></li>
             <li><a href="">инструмент</a></li>
             <li><a>перфораторы</a></li>
@@ -47,50 +49,53 @@
             <h2>Каталог перфораторов</h2>
             <!--Здесь будет форма фильтров-->
             <form action="file.php">
-                    <!--Фильтр цены-->
-                        <fieldset>
-                            <h3>Фильтр</h3>
-                            <h4>Цена</h4>
-                            <input type="range">
-                            <span>0</span>-<span>30000</span>
-                        </fieldset>
-                    <!--Выбор производителей-->
-                    <fieldset>
-                            <h4>Производители:</h4>
-                            <ul>
-                                    <li><input type="checkbox">BOSH</li>
-                                    <li><input type="checkbox">ИНТЕРСКОЛ</li>
-                                    <li><input type="checkbox">MAKITA</li>
-                                    <li><input type="checkbox">DEWALT</li>
-                                    <li><input type="checkbox">HITACHI</li>
-                             </ul>
-                     </fieldset>
-                     <!--Выбор по типу питания-->
-                     <fieldset>
-                            <h4>Питание:</h4>
-                                <ul>
-                                    <li><input type="radio">Аккумуляторные</li>
-                                    <li><input type="radio">Сетевые</li>
-                                </ul>
-                    </fieldset>
-                </form>
-                <button type="submit">Показать</button>
-            </section>
-            <!--Здесь будет меню сортировки товаров-->
-            <div>
-                <h3>Сортировка</h3>
-                <ul>
-                    <li>
-                        <a href="">по цене</a>
-                    </li>
-                    <li>
-                        <a href="">по типу</a>
-                    </li>
-                    <li>
-                        <a href="">по функционалу</a>
-                    </li>
-                </ul>
-            </div>
+                <!--Фильтр цены-->
+                <fieldset>
+                    <h3>Фильтр</h3>
+                    <h4>Цена</h4>
+                    <img src="img/filter-button.svg" alt="фильтр">
+                    <input type="range">
+                    <span>0</span>-<span>30000</span>
+                </fieldset>
+                <!--Выбор производителей-->
+                <fieldset>
+                    <h4>Производители:</h4>
+                    <ul>
+                        <li><img src="img/checkbox-on.svg" alt="Выбор сделан"><img src="img/checkbox-off.svg" alt="Выбор не сделан"><input type="checkbox">BOSH</li>
+                        <li><img src="img/checkbox-on.svg" alt="Выбор сделан"><img src="img/checkbox-off.svg" alt="Выбор не сделан"><input type="checkbox">ИНТЕРСКОЛ</li>
+                        <li><img src="img/checkbox-on.svg" alt="Выбор сделан"><img src="img/checkbox-off.svg" alt="Выбор не сделан"><input type="checkbox">MAKITA</li>
+                        <li><img src="img/checkbox-on.svg" alt="Выбор сделан"><img src="img/checkbox-off.svg" alt="Выбор не сделан"><input type="checkbox">DEWALT</li>
+                        <li><img src="img/checkbox-on.svg" alt="Выбор сделан"><img src="img/checkbox-off.svg" alt="Выбор не сделан"><input type="checkbox">HITACHI</li>
+                    </ul>
+                </fieldset>
+                <!--Выбор по типу питания-->
+                <fieldset>
+                    <h4>Питание:</h4>
+                    <ul>
+                        <li><img src="img/radio-on.svg" alt="Выбор сделан"><img src="img/radio-off.svg" alt="Выбор не сделан"><input type="radio">Аккумуляторные</li>
+                        <li><img src="img/radio-on.svg" alt="Выбор сделан"><img src="img/radio-off.svg" alt="Выбор не сделан"><input type="radio">Сетевые</li>
+                    </ul>
+                </fieldset>
+            </form>
+            <button type="submit">Показать</button>
+        </section>
+        <!--Здесь будет меню сортировки товаров-->
+        <div>
+            <h3>Сортировка</h3>
+            <ul>
+                <li>
+                    <a href="">по цене</a>
+                </li>
+                <li>
+                    <a href="">по типу</a>
+                </li>
+                <li>
+                    <a href="">по функционалу</a>
+                </li>
+            </ul>
+            <img src="img/icon-up-dir.svg" alt="Вверх">
+            <img src="img/icon-down-dir.svg" alt="Вниз">
+        </div>
 
         <section>
             <h2>Карточки товаров</h2>
@@ -102,10 +107,12 @@
                         <span>BFG 3000</span>
                     </h3>
                     <p>
-                        <img src="https://via.placeholder.com/150x100" alt="">
+                        <img src="img/Perforator.png" alt="BFG 3000">
                         <b>22500 p.</b>
+                        <img src="img/red-button.svg" alt="15500 p.">
                         <b>15500 p.</b>
                     </p>
+                    <img src="img/icon-cart.svg" alt="Корзина">
                     <a href="">купить</a>
                     <a href="">в закладки</a>
                 </li>
@@ -116,10 +123,12 @@
                         <span>BFG 6000</span>
                     </h3>
                     <p>
-                        <img src="https://via.placeholder.com/150x100" alt="">
+                        <img src="img/Perforator.png" alt="BFG 6000">
                         <b>30500 p.</b>
+                        <img src="img/red-button.svg" alt="25500 p.">
                         <b>25500 p.</b>
                     </p>
+                    <img src="img/icon-cart.svg" alt="Корзина">
                     <a href="">купить</a>
                     <a href="">в закладки</a>
                 </li>
@@ -130,9 +139,11 @@
                         <span>BFG 2000</span>
                     </h3>
                     <p>
-                        <img src="https://via.placeholder.com/150x100" alt="">
+                        <img src="img/Perforator.png" alt="BFG 2000">
+                        <img src="img/red-button.svg" alt="12500 p.">
                         <b>12500 p.</b>
                     </p>
+                    <img src="img/icon-cart.svg" alt="Корзина">
                     <a href="">купить</a>
                     <a href="">в закладки</a>
                 </li>
@@ -143,10 +154,12 @@
                         <span>BFG 3000</span>
                     </h3>
                     <p>
-                        <img src="https://via.placeholder.com/150x100" alt="">
+                        <img src="img/Perforator.png" alt="BFG 3000">
                         <b>22500 p.</b>
+                        <img src="img/red-button.svg" alt="15500 p.">
                         <b>15500 p.</b>
                     </p>
+                    <img src="img/icon-cart.svg" alt="Корзина">
                     <a href="">купить</a>
                     <a href="">в закладки</a>
                 </li>
@@ -157,10 +170,12 @@
                         <span>BFG 6000</span>
                     </h3>
                     <p>
-                        <img src="https://via.placeholder.com/150x100" alt="">
+                        <img src="img/Perforator.png" alt="BFG 6000">
                         <b>30500 p.</b>
+                        <img src="img/red-button.svg" alt="25500 p.">
                         <b>25500 p.</b>
                     </p>
+                    <img src="img/icon-cart.svg" alt="Корзина">
                     <a href="">купить</a>
                     <a href="">в закладки</a>
                 </li>
@@ -171,9 +186,11 @@
                         <span>BFG 2000</span>
                     </h3>
                     <p>
-                        <img src="https://via.placeholder.com/150x100" alt="">
+                        <img src="img/Perforator.png" alt="BFG 2000">
+                        <img src="img/red-button.svg" alt="12500 p.">
                         <b>12500 p.</b>
                     </p>
+                    <img src="img/icon-cart.svg" alt="Корзина">
                     <a href="">купить</a>
                     <a href="">в закладки</a>
                 </li>
@@ -184,10 +201,12 @@
                         <span>BFG 3000</span>
                     </h3>
                     <p>
-                        <img src="https://via.placeholder.com/150x100" alt="">
+                        <img src="img/Perforator.png" alt="BFG 3000">
                         <b>22500 p.</b>
+                        <img src="img/red-button.svg" alt="15500 p.">
                         <b>15500 p.</b>
                     </p>
+                    <img src="img/icon-cart.svg" alt="Корзина">
                     <a href="">купить</a>
                     <a href="">в закладки</a>
                 </li>
@@ -198,10 +217,12 @@
                         <span>BFG 6000</span>
                     </h3>
                     <p>
-                        <img src="https://via.placeholder.com/150x100" alt="">
+                        <img src="img/Perforator.png" alt="BFG 6000">
                         <b>30500 p.</b>
+                        <img src="img/red-button.svg" alt="25500 p.">
                         <b>25500 p.</b>
                     </p>
+                    <img src="img/icon-cart.svg" alt="Корзина">
                     <a href="">купить</a>
                     <a href="">в закладки</a>
                 </li>
@@ -212,9 +233,11 @@
                         <span>BFG 2000</span>
                     </h3>
                     <p>
-                        <img src="https://via.placeholder.com/150x100" alt="">
+                        <img src="img/Perforator.png" alt="BFG 2000">
+                        <img src="img/red-button.svg" alt="12500 p.">
                         <b>12500 p.</b>
                     </p>
+                    <img src="img/icon-cart.svg" alt="Корзина">
                     <a href="">купить</a>
                     <a href="">в закладки</a>
                 </li>
@@ -235,8 +258,8 @@
     </main>
     <footer>
         <section>
-           <h2>Контакты и навигация</h2>
-            <div><a href="index.html">ТЕХНОМАРТ</a></div>
+            <h2>Контакты и навигация</h2>
+            <a href=""><img src="img/Logo.png" alt="Логотип">ТЕХНОМАРТ</a>
             <nav>
                 <ul>
                     <li><a href="">Компания</a></li>
@@ -256,12 +279,12 @@
             </ul>
         </section>
         <section>
-           <h2>Обратная связь</h2>
+            <h2>Обратная связь</h2>
             <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
             <ul>
-                <li><a href="">в контакте</a></li>
-                <li><a href="">фейсбук</a></li>
-                <li><a href="">инстаграмм</a></li>
+                <li><a href=""><img src="img/icon-vk.svg" alt="В контакте"></a></li>
+                <li><a href=""><img src="img/icon-fb.svg" alt="Фейсбук"></a></li>
+                <li><a href=""><img src="img/icon-insta.svg" alt="Инстаграмм"></a></li>
             </ul>
             <p>Обратная связь: <a href="">mail@htmlacademy.ru</a>
             </p>
