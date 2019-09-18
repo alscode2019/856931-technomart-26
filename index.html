@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
 </head>
-
 <body>
     <header>
         <nav>
@@ -212,9 +211,25 @@
             <p>Вы можете забрать товар сами, заехав в наш офис:</p>
             <h3>Блок карты</h3>
             <figure>
-                <a href=""><img src="img/Map.png" width="300" height="158" alt="Расположение нашего офиса на карте "></a>
+                <a href=""><img src="img/Map.png" width="300" height="158" alt="Наш адрес Санкт-Петербург, улица Большая Конюшенная, дом 19/8 на карте"></a>
             </figure>
+            <img src="img/Map-popap.png" alt="Наш адрес Санкт-Петербург, улица Большая Конюшенная, дом 19/8 на карте" width="970" height="476">
+            
             <a href="">Заблудились? Напишите нам!</a>
+            <form action="https://echo.htmlacademy.ru"  method="post">
+               <p>
+                   <label for="name">Ваше имя:</label><input type="text" name="name" placeholder="Имя Фамилия" id="name">
+               </p>
+                <p>
+                    <label for="mail">Ваш e-mail:</label>
+                    <input type="text" name="mail" placeholder="email@example.com" id="mail">
+                </p>
+                <p>
+                    <label for="text">Текст письма:</label>
+                    <textarea name="text" placeholder="В свободной форме" id="text"></textarea>
+                </p>
+                <button type="submit">ОТПРАВИТЬ</button>
+                </form>
         </section>
     </main>
     <footer>
