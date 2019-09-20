@@ -46,36 +46,38 @@
         </ul>
         <h1>Перфораторы</h1>
         <section>
-            <h2>Каталог перфораторов</h2>
+            <h2 class="visually-hidden">Каталог перфораторов</h2>
             <form action="https://echo.htmlacademy.ru" method="get">
                 <!--Фильтр цены-->
-                <fieldset>
-                    <h3>Фильтр</h3>
-                    <h4>Цена</h4>
-                    <button type="button"></button>
-                    <div></div>
-                    <button type="button"></button>
-                    <input type="number" value="0">
+                <h3>Фильтр</h3>
+                   <fieldset>
+                    <legend>Цена</legend>
+                    <div>
+                        <button type="button"></button>
+                        <div></div>
+                        <button type="button"></button>
+                    </div>
+                    <label class="visually-hidden">Минимальная цена<input type="number" value="0" name="min"></label>
                     <span>-</span>
-                    <input type="number" value="30000">
+                    <label class="visually-hidden">Максимальная цена<input type="number" value="30000" name="max"></label>
                 </fieldset>
                 <!--Выбор производителей-->
                 <fieldset>
-                    <h4>Производители:</h4>
+                    <legend>Производители:</legend>
                     <ul>
-                        <li><input type="checkbox">BOSH</li>
-                        <li><input type="checkbox">ИНТЕРСКОЛ</li>
-                        <li><input type="checkbox">MAKITA</li>
-                        <li><input type="checkbox">DEWALT</li>
-                        <li><input type="checkbox">HITACHI</li>
+                        <li><label><input type="checkbox" name="BOSH">BOSH</label></li>
+                        <li><label><input type="checkbox" name="INTERSCOL">ИНТЕРСКОЛ</label></li>
+                        <li><label><input type="checkbox" name="MAKITA">MAKITA</label></li>
+                        <li><label><input type="checkbox" name="DEWALT">DEWALT</label></li>
+                        <li><label><input type="checkbox" name="HITACHI">HITACHI</label></li>
                     </ul>
                 </fieldset>
                 <!--Выбор по типу питания-->
                 <fieldset>
-                    <h4>Питание:</h4>
+                    <legend>Питание:</legend>
                     <ul>
-                        <li><input type="radio">Аккумуляторные</li>
-                        <li><input type="radio">Сетевые</li>
+                        <li><label><input type="radio" name="pit">Аккумуляторные</label></li>
+                        <li><label><input type="radio" name="pit">Сетевые</label></li>
                     </ul>
                 </fieldset>
             </form>
@@ -98,10 +100,10 @@
             <a href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="Вниз"></a>
         </div>
         <section>
-            <h2>Карточки товаров</h2>
+            <h2 class="visually-hidden">Карточки товаров</h2>
             <ul>
                 <li>
-                    <span>new</span>
+                    <span class="visually-hidden">new</span>
                     <h3>
                         <span>Перфоратор BOSCH</span>
                         <span>BFG 3000</span>
@@ -112,11 +114,11 @@
                         <img src="img/red-button.svg" alt="15500 p." width="141" height="38">
                         <b>15500 p.</b>
                     </p>
-                    <a href="#">купить</a>
-                    <a href="#">в закладки</a>
+                    <a class="visually-hidden" href="#">купить</a>
+                    <a class="visually-hidden" href="#">в закладки</a>
                 </li>
                 <li>
-                    <span>new</span>
+                    <span class="visually-hidden">new</span>
                     <h3>
                         <span>Перфоратор BOSCH</span>
                         <span>BFG 6000</span>
@@ -127,11 +129,11 @@
                         <img src="img/red-button.svg" alt="25500 p." width="141" height="38">
                         <b>25500 p.</b>
                     </p>
-                    <a href="#">купить</a>
-                    <a href="#">в закладки</a>
+                    <a  class="visually-hidden" href="#">купить</a>
+                    <a class="visually-hidden" href="#">в закладки</a>
                 </li>
                 <li>
-                    <span>new</span>
+                    <span class="visually-hidden">new</span>
                     <h3>
                         <span>Перфоратор BOSCH</span>
                         <span>BFG 2000</span>
@@ -141,11 +143,11 @@
                         <img src="img/red-button.svg" width="141" height="38" alt="12500 p.">
                         <b>12500 p.</b>
                     </p>
-                    <a href="#">купить</a>
-                    <a href="#">в закладки</a>
+                    <a  class="visually-hidden" href="#">купить</a>
+                    <a  class="visually-hidden" href="#">в закладки</a>
                 </li>
                 <li>
-                    <span>new</span>
+                    <span class="visually-hidden">new</span>
                     <h3>
                         <span>Перфоратор BOSCH</span>
                         <span>BFG 3000</span>
@@ -156,11 +158,11 @@
                         <img src="img/red-button.svg" alt="15500 p." width="141" height="38">
                         <b>15500 p.</b>
                     </p>
-                    <a href="#">купить</a>
-                    <a href="#">в закладки</a>
+                    <a class="visually-hidden" href="#">купить</a>
+                    <a class="visually-hidden" href="#">в закладки</a>
                 </li>
                 <li>
-                    <span>new</span>
+                    <span class="visually-hidden">new</span>
                     <h3>
                         <span>Перфоратор BOSCH</span>
                         <span>BFG 6000</span>
@@ -171,11 +173,11 @@
                         <img src="img/red-button.svg" alt="25500 p." width="141" height="38">
                         <b>25500 p.</b>
                     </p>
-                    <a href="#">купить</a>
-                    <a href="#">в закладки</a>
+                    <a class="visually-hidden" href="#">купить</a>
+                    <a class="visually-hidden" href="#">в закладки</a>
                 </li>
                 <li>
-                    <span>new</span>
+                    <span class="visually-hidden">new</span>
                     <h3>
                         <span>Перфоратор BOSCH</span>
                         <span>BFG 2000</span>
@@ -185,11 +187,11 @@
                         <img src="img/red-button.svg" alt="12500 p." width="141" height="38">
                         <b>12500 p.</b>
                     </p>
-                    <a href="#">купить</a>
-                    <a href="#">в закладки</a>
+                    <a class="visually-hidden" href="#">купить</a>
+                    <a class="visually-hidden" href="#">в закладки</a>
                 </li>
                 <li>
-                    <span>new</span>
+                    <span class="visually-hidden">new</span>
                     <h3>
                         <span>Перфоратор BOSCH</span>
                         <span>BFG 3000</span>
@@ -200,11 +202,11 @@
                         <img src="img/red-button.svg" alt="15500 p." width="141" height="38">
                         <b>15500 p.</b>
                     </p>
-                    <a href="#">купить</a>
-                    <a href="#">в закладки</a>
+                    <a class="visually-hidden" href="#">купить</a>
+                    <a class="visually-hidden" href="#">в закладки</a>
                 </li>
                 <li>
-                    <span>new</span>
+                    <span class="visually-hidden">new</span>
                     <h3>
                         <span>Перфоратор BOSCH</span>
                         <span>BFG 6000</span>
@@ -215,11 +217,11 @@
                         <img src="img/red-button.svg" alt="25500 p." width="141" height="38">
                         <b>25500 p.</b>
                     </p>
-                    <a href="#">купить</a>
-                    <a href="#">в закладки</a>
+                    <a class="visually-hidden" href="#">купить</a>
+                    <a class="visually-hidden" href="#">в закладки</a>
                 </li>
                 <li>
-                    <span>new</span>
+                    <span class="visually-hidden">new</span>
                     <h3>
                         <span>Перфоратор BOSCH</span>
                         <span>BFG 2000</span>
@@ -229,8 +231,8 @@
                         <img src="img/red-button.svg" alt="12500 p." width="141" height="38">
                         <b>12500 p.</b>
                     </p>
-                    <a href="#">купить</a>
-                    <a href="#">в закладки</a>
+                    <a class="visually-hidden" href="#">купить</a>
+                    <a class="visually-hidden" href="#">в закладки</a>
                 </li>
             </ul>
             <ul>
@@ -243,6 +245,7 @@
                 <p>Товар добавлен в корзину!</p>
                 <p><a href="#">ОФОРМИТЬ ЗАКАЗ</a></p>
                 <p><a href="catalog.html">ПРОДОЛЖИТЬ ПОКУПКИ</a></p>
+                <button type="button">Выход</button>
             </div>
         </section>
         <section>
@@ -254,7 +257,7 @@
     </main>
     <footer>
         <section>
-            <h2>Контакты и навигация</h2>
+            <h2 class="visually-hidden">Контакты и навигация</h2>
             <a href="index.html"><img src="img/logo-technomart.svg" alt="Логотип магазина строительной техники Техномарт" width="220" height="47"></a>
             <nav>
                 <ul>
@@ -275,7 +278,7 @@
             </ul>
         </section>
         <section>
-            <h2>Обратная связь</h2>
+            <h2 class="visually-hidden">Обратная связь</h2>
             <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
             <ul>
                 <li><a href="#"><img src="img/icon-vk.svg" width="26" height="15" alt="Наша компания в соцсети В контакте"></a></li>
