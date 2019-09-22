@@ -1,0 +1,198 @@
+body {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-weight: 400;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+a {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    background-color: #ee3643;
+}
+
+address {
+    font-style: normal; 
+}
+
+.visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.crossed {
+    color: #a9a9a9;
+    text-decoration: line-through;
+}
+
+.header,
+.header-tel,
+.header-autorize a {
+    background-color: #f4f7f9;
+}
+
+.top-menu, .contacts, .top-menu a,  .contacts a {
+  background-color:#293449;  
+}
+
+.top-menu a,
+.header-nav a {
+    font-size: 17px;
+    text-transform: none;
+}
+
+.main-heading {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 23px;
+    color: #ee3643;
+}
+
+.header-tel {
+    font-size: 21px;
+    color: #ee3643;
+}
+
+.header-address {
+    font-size: 14px;
+    color: #32425c;
+}
+
+.header-autorize a {
+    font-size: 21px;
+    color: #000000;
+}
+
+.header-nav,
+.header-nav a {
+    background-color: #32425c;
+}
+
+.main-promo h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: none;
+    color: #ffffff;
+}
+
+.main-materials,
+.main-materials a {
+    background-color: #ffbf47;
+}
+
+.main-instrument,
+.main-instrument a {
+    background-color: #3bbce3;
+}
+
+.main-technic,
+.main-technic a {
+    background-color: #dc91d8;
+}
+
+.main-discounts,
+.main-discounts a {
+    background-color: #8ed78f;
+}
+
+.main-delivery,
+.main-delivery a {
+    background-color: #ffc047;
+}
+
+.prpmo-slider {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.prpmo-slider h3 {
+    font-size: 36px;
+    text-transform: uppercase;
+    }
+
+.main-popular {
+    font-size: 30px;
+    color: #32425c;
+    text-transform: uppercase;
+
+    background-color: #f9f5f0;
+}
+
+.main-items {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    }
+
+.price {
+    font-size: 17px;
+    color: #ffffff;
+}
+
+.main-service {
+    background-color: #f4f7f9;
+    }
+
+.main-service h2, .main-about h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+ }
+
+.main-service h4 {
+    font-size: 36px;
+    color: #32425c;
+    text-transform: uppercase;
+}
+
+.main-service p, .main-about p {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size:13px;
+    line-height:24px;
+    }
+
+.main-service-choice {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.background-delivery {
+    width: 468px;
+    height: 261px;
+    background-image: url("/img/Service.png");
+ }
+
+.main-about-transport, {
+    font-size: 18px;
+}
+
+.footer-nav, .footer-nav a {
+    font-size: 18px;
+    text-transform: none;
+    color: #f3f7f9;
+    
+    background-color: #32425c;
+    }
+
+.contacts {
+    color: #ffffff;
+}
+
+.footer-nav-bottom a, .contacts a{
+    color: #ffd180;
+    text-transform: none;
+}
+
+
+
