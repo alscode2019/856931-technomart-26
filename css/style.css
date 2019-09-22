@@ -170,10 +170,10 @@ address {
 .background-delivery {
     width: 468px;
     height: 261px;
-    background-image: url("/img/Service.png");
+    background-image: url("../img/Service.png");
  }
 
-.main-about-transport, {
+.main-about-transport {
     font-size: 18px;
 }
 
