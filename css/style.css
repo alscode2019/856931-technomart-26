@@ -1,5 +1,5 @@
 body {
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-weight: 400;
     color: #000000;
 
@@ -15,7 +15,7 @@ a {
 }
 
 address {
-    font-style: normal; 
+    font-style: normal;
 }
 
 .visually-hidden {
@@ -38,12 +38,16 @@ address {
 
 .header,
 .header-tel,
-.header-autorize a {
-    background-color: #f4f7f9;
+.catalog-autorize-nav a,
+.catalog-header {
+    background-color: #f2f6f8;
 }
 
-.top-menu, .contacts, .top-menu a,  .contacts a {
-  background-color:#293449;  
+.top-menu,
+.contacts,
+.top-menu a,
+.contacts a {
+    background-color: #293449;
 }
 
 .top-menu a,
@@ -52,7 +56,8 @@ address {
     text-transform: none;
 }
 
-.main-heading {
+
+.title {
     font-style: italic;
     font-size: 16px;
     line-height: 23px;
@@ -69,9 +74,20 @@ address {
     color: #32425c;
 }
 
-.header-autorize a {
+.header-autorize a,
+.catalog-header-autorize a {
     font-size: 21px;
     color: #000000;
+    text-transform: none;
+    background-color: #ffffff;
+
+}
+
+.catalog-autorize-nav a {
+    font-size: 16px;
+    color: #32425c;
+    text-transform: none;
+    text-decoration: underline;
 }
 
 .header-nav,
@@ -119,7 +135,7 @@ address {
 .prpmo-slider h3 {
     font-size: 36px;
     text-transform: uppercase;
-    }
+}
 
 .main-popular {
     font-size: 30px;
@@ -130,11 +146,11 @@ address {
 }
 
 .main-items {
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: bold;
     font-size: 18px;
     line-height: 20px;
-    }
+}
 
 .price {
     font-size: 17px;
@@ -143,12 +159,13 @@ address {
 
 .main-service {
     background-color: #f4f7f9;
-    }
+}
 
-.main-service h2, .main-about h2 {
+.main-service h2,
+.main-about h2 {
     font-size: 30px;
     text-transform: uppercase;
- }
+}
 
 .main-service h4 {
     font-size: 36px;
@@ -156,11 +173,12 @@ address {
     text-transform: uppercase;
 }
 
-.main-service p, .main-about p {
+.main-service p,
+.main-about p {
     font-family: "PT Sans", Arial, sans-serif;
-    font-size:13px;
-    line-height:24px;
-    }
+    font-size: 13px;
+    line-height: 24px;
+}
 
 .main-service-choice {
     font-size: 21px;
@@ -171,28 +189,79 @@ address {
     width: 468px;
     height: 261px;
     background-image: url("../img/Service.png");
- }
+}
 
 .main-about-transport {
     font-size: 18px;
 }
 
-.footer-nav, .footer-nav a {
+.catalog-crumbs a,
+.catalog-filters h3,
+.catalog-sort-menu {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    color: #000000;
+
+    background-color: inherit;
+}
+
+.catalog-header {
+    font-size: 30px;
+    color: #32425c;
+    text-transform: uppercase;
+}
+
+.catalog-filters,
+.catalog-button,
+.catalog-sort-menu {
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-transform: uppercase;
+}
+
+.catalog-filters h3,
+.catalog-sort-menu,
+.catalog-filters-price {
+    background-color: #f7f3ec;
+}
+
+.catalog-filters fieldset {
+    border: none;
+}
+
+.catalog-filters legend {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.catalog-filters ul {
+    font-size: 15px;
+}
+
+.catalog-button {
+    font-size: 13px;
+}
+
+.catalog-sort-menu a {
+    color: #c5c5c5;
+
+    background-color: inherit;
+}
+
+.footer-nav,
+.footer-nav a {
     font-size: 18px;
     text-transform: none;
     color: #f3f7f9;
-    
+
     background-color: #32425c;
-    }
+}
 
 .contacts {
     color: #ffffff;
 }
 
-.footer-nav-bottom a, .contacts a{
+.footer-nav-bottom a,
+.contacts a {
     color: #ffd180;
     text-transform: none;
 }
-
-
-
