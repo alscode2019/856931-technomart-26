@@ -56,6 +56,13 @@ address {
     text-transform: none;
 }
 
+.header-nav a:active {
+    color: #a8abaf;
+}
+
+.top-menu-list a:active {
+    color: #8b8e94;
+}
 
 .title {
     font-style: italic;
@@ -80,7 +87,18 @@ address {
     color: #000000;
     text-transform: none;
     background-color: #ffffff;
+}
 
+.header-autorize a:hover,
+.catalog-autorize-nav a:hover,
+.catalog-sort-menu a:active {
+    color: #ee3643;
+}
+
+.header-autorize a:active,
+.catalog-header-autorize a:active,
+.catalog-autorize-nav a:active {
+    color: #c5c5c5;
 }
 
 .catalog-autorize-nav a {
@@ -162,7 +180,8 @@ address {
 }
 
 .main-service h2,
-.main-about h2 {
+.main-about h2,
+.catalog-promote-item h2 {
     font-size: 30px;
     text-transform: uppercase;
 }
@@ -174,7 +193,8 @@ address {
 }
 
 .main-service p,
-.main-about p {
+.main-about p,
+.catalog-promote-item p {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
@@ -183,6 +203,21 @@ address {
 .main-service-choice {
     font-size: 21px;
     font-weight: bold;
+    color: #ffffff;
+}
+
+.main-service-choice li {
+    background-color: #32425c;
+}
+
+.main-service-choice li:hover {
+    background-color: #293449;
+}
+
+.main-service-choice li:active {
+    color: #32425c;
+
+    background-color: #ffffff;
 }
 
 .background-delivery {
@@ -197,7 +232,8 @@ address {
 
 .catalog-crumbs a,
 .catalog-filters h3,
-.catalog-sort-menu {
+.catalog-sort-menu,
+.catalog-pagination a {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     color: #000000;
@@ -247,6 +283,25 @@ address {
     background-color: inherit;
 }
 
+.catalog-sort-menu a:hover {
+    color: #000000;
+}
+
+.catalog-item-popap {
+    font-size: 30px;
+}
+
+.catalog-item-popap a {
+    font-size: 14px;
+    color: #000000;
+
+    background-color: inherit;
+}
+
+.catalog-item-popap-menu {
+    background-color: #f1f1f1;
+}
+
 .footer-nav,
 .footer-nav a {
     font-size: 18px;
@@ -256,7 +311,19 @@ address {
     background-color: #32425c;
 }
 
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-nav-top a:active {
+    color: #8a939f;
+
+    text-decoration: none;
+}
+
 .contacts {
+    font-size: 16px;
+    line-height: 18px;
     color: #ffffff;
 }
 
@@ -264,4 +331,21 @@ address {
 .contacts a {
     color: #ffd180;
     text-transform: none;
+}
+
+.footer-nav-bottom a:active {
+    color: #a9936e;
+
+    text-decoration: none;
+}
+
+.contacts-mail a:hover,
+.contacts-html a:hover {
+    text-decoration: underline;
+}
+
+.contacts-mail a:active,
+.contacts-html a:active {
+    color: #ee3643;
+    text-decoration: none;
 }
