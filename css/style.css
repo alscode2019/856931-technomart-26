@@ -6,6 +6,12 @@ body {
     background-color: #ffffff;
 }
 
+html,
+body {
+    min-width: 1200px;
+    min-height: 3150px;
+}
+
 a {
     font-size: 14px;
     text-transform: uppercase;
@@ -31,6 +37,11 @@ address {
     overflow: hidden;
 }
 
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
 .crossed {
     color: #a9a9a9;
     text-decoration: line-through;
@@ -48,6 +59,30 @@ address {
 .top-menu a,
 .contacts a {
     background-color: #293449;
+}
+
+.top-menu-wrapper {
+    display: flex;
+    }
+
+.top-menu {
+    height: 42px;
+}
+
+.top-menu-list {
+    display: flex;
+    justify-content: flex-end;
+    }
+
+
+.logo {
+    width: 220px;
+    height: 42px;
+    background-color: #ee3643;
+}
+
+.logo img {
+    margin: 12px auto;
 }
 
 .top-menu a,
