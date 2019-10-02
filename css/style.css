@@ -18,7 +18,7 @@ a {
     color: #ffffff;
 
     background-color: #ee3643;
-}
+    }
 
 address {
     font-style: normal;
@@ -56,34 +56,48 @@ address {
 
 .top-menu,
 .contacts,
-.top-menu a,
-.contacts a {
+.contacts a,
+.top-menu-list a {
     background-color: #293449;
 }
 
 .top-menu-wrapper {
     display: flex;
-    }
+}
 
 .top-menu {
     height: 42px;
 }
 
+.top-menu li {
+    width: 150px;
+    height: 42px;
+    padding-top: 10px;
+text-align: center;
+    /*временно*/
+    border-right: 1px solid aqua;
+    /*временно*/
+}
+
+
 .top-menu-list {
     display: flex;
     justify-content: flex-end;
-    }
-
-
-.logo {
-    width: 220px;
-    height: 42px;
-    background-color: #ee3643;
 }
 
-.logo img {
-    margin: 12px auto;
+.top-menu-list li:first-child {
+    width: 74px;
+    margin-right: auto;
 }
+
+.top-menu-list li:last-child  {
+    background-color: #63a63e;
+}
+
+.top-menu-list a {
+   background-color: inherit;
+ }
+
 
 .top-menu a,
 .header-nav a {
@@ -99,21 +113,75 @@ address {
     color: #8b8e94;
 }
 
+.header {
+    min-height: 276px;
+}
+
+.header .container {
+    min-height:172px;
+    padding-top: 47px;
+}
+
+.header-wrapper {
+    min-height: 69px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .title {
     font-style: italic;
     font-size: 16px;
     line-height: 23px;
     color: #ee3643;
+
+    width: 197px;
+}
+
+.header-contacts {
+    width: 270px;
 }
 
 .header-tel {
     font-size: 21px;
     color: #ee3643;
+
+    display: block;
+    width: 270px;
+    height: 46px;
+    border: solid 4px #ffffff;
+    text-align: center;
+    padding-top: 6px;
+    
 }
 
 .header-address {
     font-size: 14px;
     color: #32425c;
+    text-align: center;
+}
+
+.header-autorize-wrapper {
+    width: 283px;
+    }
+
+.header-autorize {
+   display: flex;
+    height: 46px;
+    justify-content: space-between;
+    }
+
+.header-autorize li {
+  background-color: #ffffff;
+    padding-top: 10px;
+    text-align: center;
+    }
+
+.header-autorize li:first-child {
+  width:123px;  
+}
+
+.header-autorize li:last-child {
+  width: 150px;  
 }
 
 .header-autorize a,
@@ -122,7 +190,7 @@ address {
     color: #000000;
     text-transform: none;
     background-color: #ffffff;
-}
+    }
 
 .header-autorize a:hover,
 .catalog-autorize-nav a:hover,
@@ -146,6 +214,19 @@ address {
 .header-nav,
 .header-nav a {
     background-color: #32425c;
+}
+
+.header-nav li {
+   text-align: center; 
+}
+
+.header-nav {
+    display: flex;
+    min-height: 56px;
+    justify-content: space-between;
+    
+    margin-top: 45px;
+    padding-top: 17px;
 }
 
 .main-promo h3 {
@@ -261,6 +342,23 @@ address {
     background-image: url("../img/Service.png");
 }
 
+.main-about {
+    min-height: 536px;
+}
+
+.main-about .container {
+    display: flex;
+    padding-top: 82px;
+}
+
+.main-about-delivery {
+    width: 520px;
+}
+
+.main-about-contacts {
+    width: 300px;
+}
+
 .main-about-transport {
     font-size: 18px;
 }
@@ -346,8 +444,26 @@ address {
     background-color: #32425c;
 }
 
+.logo {
+    width: 220px;
+    height: 42px;
+    background-color: #ee3643;
+}
+
+.logo img {
+    margin: 12px auto;
+}
+
+.footer-top-wrapper {
+    display: flex;
+}
+
 .footer-nav a:hover {
     text-decoration: underline;
+}
+
+.footer-nav-top {
+   display: flex; 
 }
 
 .footer-nav-top a:active {
@@ -362,6 +478,14 @@ address {
     color: #ffffff;
 }
 
+.footer-nav-bottom-wrapper {
+  display: flex;  
+}
+
+.footer-nav-bottom {
+    display: flex;
+}
+
 .footer-nav-bottom a,
 .contacts a {
     color: #ffd180;
@@ -370,8 +494,15 @@ address {
 
 .footer-nav-bottom a:active {
     color: #a9936e;
-
     text-decoration: none;
+}
+
+.contacts .container {
+   display: flex; 
+}
+
+.socials {
+    display: flex;
 }
 
 .contacts-mail a:hover,
