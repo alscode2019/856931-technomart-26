@@ -104,7 +104,7 @@
             <section>
                 <div class="main-popular">
                     <h2>Популярные товары:</h2>
-                    <a href="#">Все популярные товары</a>
+                    <a class="main-links" href="#">Все популярные товары</a>
                 </div>
                 <ul class="main-items">
                     <li>
@@ -163,9 +163,9 @@
             <section>
                 <div class="main-popular">
                     <h2>Популярные производители:</h2>
-                    <a href="#">Все производители</a>
+                    <a class="main-links" href="#">Все производители</a>
                 </div>
-                <ul>
+                <ul class="popular-maker">
                     <li>
                         <a href="#"><img src="img/Fabric-bosch.png" alt=" фирма Bosch" width="126" height="37"></a>
                     </li>
@@ -194,36 +194,39 @@
         </div>
         <section class="main-service">
             <div class="container">
-                <h2>Сервисы</h2>
-                <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
-                <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+                <div class="main-service-top-wrapper">
+                    <h2>Сервисы</h2>
+                    <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+                </div>
                 <h3 class="visually-hidden">Слайдер сервисов</h3>
-                <ul class="main-service-choice">
-                    <li>Доставка</li>
-                    <li>Гарантия</li>
-                    <li>Кредит</li>
-                </ul>
-                <div>
-                    <h4>Доставка</h4>
-                    <p>Мы с удовольствием доставим ваш товар прямо</p>
-                    <p>к вашему подъезду совершенно бесплатно!</p>
-                    <p>Ведь мы неплохо заработаем,</p>
-                    <p>поднимая его на ваш этаж!</p>
-                    <div class="background-delivery"></div>
-                </div>
-                <div class="visually-hidden">
-                    <h4>Гарантия</h4>
-                    <p>Если купленный у нас товар поломается или заискрит,</p>
-                    <p>а также в случае пожара, спровоцированного его возгоранием,</p>
-                    <p>вы всегда можете быть уверены в нашей гарантии. Мы обменяем</p>
-                    <p>сгоревший товар на новый.</p>
-                    <p>Дом уж восстановите как-нибудь сами.</p>
-                </div>
-                <div class="visually-hidden">
-                    <h4>Кредит</h4>
-                    <p>Залезть в долговую яму стало проще!</p>
-                    <p>Кредитные консультанты придут вам на помощь.</p>
-                    <a href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
+                <div class="main-service-choice-slider-wrapper">
+                    <ul class="main-service-choice">
+                        <li>Доставка</li>
+                        <li>Гарантия</li>
+                        <li>Кредит</li>
+                    </ul>
+                    <div class="main-service-slider">
+                        <h4>Доставка</h4>
+                        <p>Мы с удовольствием доставим ваш товар прямо</p>
+                        <p>к вашему подъезду совершенно бесплатно!</p>
+                        <p>Ведь мы неплохо заработаем,</p>
+                        <p>поднимая его на ваш этаж!</p>
+                        <div class="background-delivery"></div>
+                    </div>
+                    <div class="visually-hidden">
+                        <h4>Гарантия</h4>
+                        <p>Если купленный у нас товар поломается или заискрит,</p>
+                        <p>а также в случае пожара, спровоцированного его возгоранием,</p>
+                        <p>вы всегда можете быть уверены в нашей гарантии. Мы обменяем</p>
+                        <p>сгоревший товар на новый.</p>
+                        <p>Дом уж восстановите как-нибудь сами.</p>
+                    </div>
+                    <div class="visually-hidden">
+                        <h4>Кредит</h4>
+                        <p>Залезть в долговую яму стало проще!</p>
+                        <p>Кредитные консультанты придут вам на помощь.</p>
+                        <a href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -233,23 +236,25 @@
                     <h2>КОМПАНИЯ «Техномарт»</h2>
                     <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
                     <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
+
                     <ul class="main-about-transport">
                         <li>Деловые линии</li>
                         <li>Автотрейдинг</li>
                         <li>ЖелДорЭкспедиция</li>
                     </ul>
-                    <a href="#">Подробнее о компании</a>
+                    <a class="main-links" href="#">Подробнее о компании</a>
                 </section>
                 <section class="main-about-contacts">
                     <h2>КОНТАКТЫ</h2>
-                    <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+                    <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
                     <h3 class="visually-hidden">Блок карты</h3>
                     <figure>
-                        <a href="#"><img src="img/Map.png" width="300" height="158" alt="Наш адрес Санкт-Петербург, улица Большая Конюшенная, дом 19/8 на карте"></a>
+                        <a href="#"><img src="img/Map.png" width="300" height="160" alt="Наш адрес Санкт-Петербург, улица Большая Конюшенная, дом 19/8 на карте"></a>
+                        <button type="button">Закрыть</button>
                     </figure>
                     <img class="visually-hidden" src="img/Map-popap.png" alt="Наш адрес Санкт-Петербург, улица Большая Конюшенная, дом 19/8 на карте" width="970" height="476">
-                    <button type="button">Закрыть</button>
-                    <a href="#">Заблудились? Напишите нам!</a>
+
+                    <a class="main-links" href="#">Заблудились? Напишите нам!</a>
                     <div class="visually-hidden">
                         <form action="https://echo.htmlacademy.ru" method="post">
                             <p>
@@ -288,8 +293,10 @@
                     </nav>
                 </div>
                 <div class="footer-nav-bottom-wrapper">
-                    <address class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-                    <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+                    <div class="footer-contacts">
+                        <address class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+                        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+                    </div>
                     <ul class="footer-nav-bottom">
                         <li><a href="#">Материалы</a></li>
                         <li><a href="#">Техника</a></li>
@@ -302,7 +309,7 @@
         <section class="contacts">
             <div class="container">
                 <h2 class="visually-hidden">Обратная связь</h2>
-                <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
+                <p class="rights">© 2010–2019 Компания «Техномарт» Все права защищены</p>
                 <ul class="socials">
                     <li><a href="#"><img src="img/icon-vk.svg" width="26" height="15" alt="Наша компания в соцсети В контакте"></a></li>
                     <li><a href="#"><img src="img/icon-fb.svg" width="12" height="22" alt=" Наша компания в соцсети Фейсбук"></a></li>
