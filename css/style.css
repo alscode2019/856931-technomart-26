@@ -22,7 +22,7 @@ a {
 
 address {
     font-style: normal;
-    
+
 }
 
 .visually-hidden {
@@ -46,12 +46,16 @@ address {
 .crossed {
     color: #a9a9a9;
     text-decoration: line-through;
+        
+    position: absolute;
+    margin-top: -20px;
 }
 
 .header,
 .header-tel,
 .catalog-autorize-nav a,
-.catalog-header, .catalog-promote-item {
+.catalog-header,
+.catalog-promote-item {
     background-color: #f2f6f8;
 }
 
@@ -90,7 +94,7 @@ address {
     height: 42px;
     padding-top: 10px;
     text-align: center;
-    }
+}
 
 
 .top-menu-list {
@@ -99,8 +103,8 @@ address {
 }
 
 .top-menu-list li:first-child {
-   margin-right: auto;
-    
+    margin-right: auto;
+
 }
 
 .top-menu-list li:last-child {
@@ -171,7 +175,7 @@ address {
     font-size: 14px;
     color: #32425c;
     text-align: center;
-    
+
     padding-top: 9px;
 }
 
@@ -223,20 +227,20 @@ address {
     width: 300px;
 }
 
-.catalog-header-autorize  {
+.catalog-header-autorize {
     background-color: #ffffff;
-    
+
     height: 50px;
     text-align: center;
     padding-top: 16px;
- }
+}
 
-.catalog-autorize-nav  {
-   width: 300px; 
-   display: flex;
-   justify-content: space-between;
-    padding-top:8px; 
-  }
+.catalog-autorize-nav {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+}
 
 .catalog-autorize-nav li {
     width: auto;
@@ -247,8 +251,8 @@ address {
     color: #32425c;
     text-transform: none;
     text-decoration: underline;
-    
-    }
+
+}
 
 .header-nav,
 .header-nav a {
@@ -269,6 +273,35 @@ address {
     margin-top: 45px;
     border-bottom: 5px solid #293449;
 
+}
+
+.promo-top-wrapper,
+.promo-bootom-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.promo-bootom-wrapper {
+    margin-top: 20px;
+
+}
+
+.main-promo li {
+    width: 300px;
+    min-height: 125px;
+}
+
+.promo-top-wrapper li,
+.promo-bootom-wrapper li {
+    padding-top: 28px;
+    padding-left: 25px;
+}
+
+.promo-bootom-wrapper .main-promo {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .main-promo h3 {
@@ -303,14 +336,42 @@ address {
     background-color: #ffc047;
 }
 
-.prpmo-slider {
+.promo-slider {
     font-size: 18px;
     color: #ffffff;
 }
 
-.prpmo-slider h3 {
+.promo-slider h3 {
     font-size: 36px;
     text-transform: uppercase;
+
+    position: absolute;
+    padding-top: 28px;
+    margin-left: 25px;
+}
+
+.promo-slider p {
+    position: absolute;
+    padding-top: 65px;
+    margin-left: 25px;
+}
+
+.main-links {
+    display: block;
+    height: 38px;
+
+    text-align: center;
+    padding: 11px;
+    margin-top: 38px;
+    border-radius: 3px;
+}
+
+.promo-slider .main-links {
+    position: absolute;
+    width: 196px;
+    margin-top: -61px;
+    margin-left: 25px;
+
 }
 
 .main-popular {
@@ -324,21 +385,11 @@ address {
     min-height: 90px;
     padding-left: 32px;
     padding-right: 25px;
-    
-}
 
-.main-links {
-    display: block;
-    height: 38px;
-    
-    text-align: center;
-    padding: 11px;
-    margin-top: 38px;
-    border-radius: 3px;
 }
 
 .main-popular .main-links {
-   margin-top:0px;
+    margin-top: 0px;
     width: 254px;
 }
 
@@ -347,13 +398,17 @@ address {
     font-weight: bold;
     font-size: 18px;
     line-height: 20px;
-    
+
     display: flex;
 }
 
 .price {
     font-size: 17px;
     color: #ffffff;
+    
+    position: absolute;
+    margin-top: -25px;
+    
 }
 
 .popular-maker {
@@ -367,6 +422,8 @@ address {
 
 .main-service {
     background-color: #f4f7f9;
+
+    min-height: 524px;
 }
 
 .main-service h2,
@@ -400,9 +457,10 @@ address {
     font-size: 21px;
     font-weight: bold;
     color: #ffffff;
-    
+
     width: 242px;
-    }
+    padding-top: 77px;
+}
 
 
 .main-service-choice li {
@@ -437,10 +495,25 @@ address {
 }
 
 .main-service-slider {
-    width: 275px;
+    width: 525px;
+    min-height: 285px;
     margin-left: 81px;
-    
-    
+    margin-top: 77px;
+
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.background-delivery {
+    background-image: url("../img/Service.png");
+}
+
+.background-guarantee {
+    background-image: url("../img/Garanty.png")
+}
+
+.background-credit {
+    background-image: url("../img/Credit.png")
 }
 
 .main-about .container {
@@ -462,21 +535,20 @@ address {
     width: 300px;
 }
 
-.main-about p, .main-about figure {
+.main-about p,
+.main-about figure {
     padding-top: 30px;
 }
 
 .main-about-transport {
     font-size: 18px;
     padding-top: 29px;
-    
+
     min-height: 110px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-
-
 
 .main-about button {
     position: absolute;
@@ -520,7 +592,7 @@ address {
     align-items: center;
 }
 
-.catalog-crumbs li{
+.catalog-crumbs li {
     width: auto;
     padding-left: 40px
 }
@@ -535,8 +607,8 @@ address {
 }
 
 .catalog-filters {
-   width: 220px;
-    
+    width: 220px;
+
 }
 
 .catalog-filters fieldset {
@@ -557,11 +629,12 @@ address {
     padding-left: 20px;
 }
 
-.catalog-filters h3, .catalog-sort-menu {
+.catalog-filters h3,
+.catalog-sort-menu {
     min-height: 38px;
     padding-left: 20px;
     padding-top: 12px;
- }
+}
 
 .catalog-sort-menu {
     display: flex;
@@ -569,10 +642,10 @@ address {
 }
 
 .catalog-sort-menu ul {
-    display: flex;    
+    display: flex;
 }
 
-.catalog-sort-menu li  {
+.catalog-sort-menu li {
     width: 130px;
 }
 
@@ -586,7 +659,7 @@ address {
 }
 
 .catalog-cards ul {
-   display: flex;
+    display: flex;
     flex-wrap: wrap;
 }
 
@@ -638,10 +711,10 @@ address {
 .footer-nav .logo {
     height: 64px;
     width: 220px;
-    }
+}
 
 .footer-nav .logo img {
-    margin-top: 22px; 
+    margin-top: 22px;
 }
 
 .footer-top-wrapper {
@@ -696,7 +769,7 @@ address {
     font-size: 16px;
     line-height: 18px;
     color: #ffffff;
-   
+
     min-height: 108px;
 }
 
@@ -714,7 +787,7 @@ address {
 .contacts .container {
     display: flex;
     padding-top: 36px;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
 .rights {
@@ -724,7 +797,7 @@ address {
 .socials {
     display: flex;
     width: 132px;
-  }
+}
 
 .contacts-mail a:hover,
 .contacts-html a:hover {
