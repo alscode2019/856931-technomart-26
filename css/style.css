@@ -9,7 +9,6 @@ body {
 html,
 body {
     min-width: 1200px;
-    min-height: 3150px;
 }
 
 a {
@@ -46,7 +45,7 @@ address {
 .crossed {
     color: #a9a9a9;
     text-decoration: line-through;
-        
+
     position: absolute;
     margin-top: -20px;
 }
@@ -94,7 +93,7 @@ address {
     height: 42px;
     padding-top: 10px;
     text-align: center;
-}
+    }
 
 
 .top-menu-list {
@@ -114,6 +113,17 @@ address {
 .top-menu-list a {
     background-color: inherit;
 }
+
+.top-menu-list a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    width: 18px;
+    height: 20px;
+    background-image: url(../img/icon-search.svg);
+    background-repeat: no-repeat;
+    }
 
 
 .top-menu a,
@@ -135,17 +145,15 @@ address {
 }
 
 .header .container {
-    min-height: 172px;
     padding-top: 47px;
 }
 
 .header-wrapper {
-    min-height: 69px;
     display: flex;
     justify-content: space-between;
 }
 
-.title {
+.site-name {
     font-style: italic;
     font-size: 16px;
     line-height: 23px;
@@ -266,13 +274,11 @@ address {
 
 .header-nav {
     display: flex;
-    min-height: 56px;
     justify-content: space-around;
     align-items: center;
 
     margin-top: 45px;
     border-bottom: 5px solid #293449;
-
 }
 
 .promo-top-wrapper,
@@ -405,25 +411,27 @@ address {
 .price {
     font-size: 17px;
     color: #ffffff;
-    
+
     position: absolute;
     margin-top: -25px;
-    
+
 }
 
 .popular-maker {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+
+
 }
 
 .popular-maker li {
-    width: 221px;
+    width: 220px;
+    margin-top: 22px;
 }
 
 .main-service {
     background-color: #f4f7f9;
-
-    min-height: 524px;
 }
 
 .main-service h2,
@@ -519,7 +527,6 @@ address {
 .main-about .container {
     display: flex;
     padding-top: 82px;
-    min-height: 368px;
     justify-content: space-between
 }
 
