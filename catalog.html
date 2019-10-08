@@ -7,6 +7,22 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%1FPT+Sans&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.pixlayout.0.9.7.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $.pixlayout({
+                clip: true,
+                src: "technomart-catalog.jpg",
+                show: true,
+                center: true,
+                top: 0,
+                left: 0,
+                pervious: false
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -17,10 +33,10 @@
                     <div class="top-menu-wrapper">
                         <a class="logo" href="index.html"><img src="img/logo-technomart.svg" alt="Логотип магазина строительной техники Техномарт" width="109" height="18"></a>
                         <ul class="top-menu-list">
-                            <li><a href="#">Поиск:</a></li>
-                            <li><a href="#">Закладки:</a></li>
-                            <li><a href="#">Корзина:</a></li>
-                            <li><a href="#">Оформить заказ</a></li>
+                            <li><a class="search" href="#">Поиск:</a></li>
+                            <li><a class="bookmarks" href="#">Закладки:</a></li>
+                            <li><a class="cart" href="#">Корзина:</a></li>
+                            <li><a class="booking" href="#">Оформить заказ</a></li>
                         </ul>
                     </div>
                 </div>
@@ -28,7 +44,7 @@
             <div class="header">
                 <div class="container">
                     <div class="header-wrapper">
-                        <p class="title">Интернет-магазин строительных материалов<br>и инструментов для ремонта</p>
+                        <p class="site-name">Интернет-магазин строительных материалов<br>и инструментов для ремонта</p>
                         <div class="header-contacts">
                             <a class="header-tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
                             <address class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
