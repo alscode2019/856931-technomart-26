@@ -8,7 +8,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-   <!--<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="js/jquery.pixlayout.0.9.7.js"></script>
     <script type="text/javascript">
         $(function() {
@@ -22,7 +22,7 @@
                 pervious: false
             });
         });
-    </script>-->
+    </script>
 
 </head>
 
@@ -34,7 +34,7 @@
                     <div class="top-menu-wrapper">
                         <a class="logo" href="index.html"><img src="img/logo-technomart.svg" alt="Логотип магазина строительной техники Техномарт" width="109" height="18"></a>
                         <ul class="top-menu-list">
-                            <li><a class="search" href="#">Поиск:</a></li>
+                            <li><input class="search" type="search" placeholder="Поиск:"></li>
                             <li><a class="bookmarks" href="#">Закладки:</a></li>
                             <li><a class="cart" href="#">Корзина:</a></li>
                             <li><a class="booking" href="#">Оформить заказ</a></li>
@@ -80,7 +80,8 @@
                 <h2 class="visually-hidden">Промоблок</h2>
                 <ul class="main-promo promo-top-wrapper">
                     <li class="main-materials">
-                        <h3>Материалы</h3><span class="visually-hidden">new</span>
+                       <span class="promo-new">new</span>
+                        <h3>Материалы</h3>
                         <a href="#">На любой вкус</a>
                     </li>
                     <li class="main-instrument">
@@ -97,6 +98,8 @@
                         <div>
                             <h3>Дрели</h3>
                             <p>Соседям на радость!</p>
+                            <a class="slider-left" href="#"></a>
+                            <a class="slider-right" href="#"></a>
                             <figure>
                                 <img src="img/Slider-drel.jpg" alt="Дрели" width="620" height="266">
                             </figure>
@@ -109,7 +112,7 @@
                             </figure>
                         </div>
                         <a class="main-links" href="catalog.html">Открыть каталог</a>
-                    </section>
+                        </section>
                     <ul class="main-promo">
                         <li class="main-discounts">
                             <h3>Скидки 50%</h3><span class="visually-hidden">new</span>
@@ -221,11 +224,13 @@
                 </div>
                 <h3 class="visually-hidden">Слайдер сервисов</h3>
                 <div class="main-service-choice-slider-wrapper">
-                    <ul class="main-service-choice">
-                        <li>Доставка</li>
-                        <li>Гарантия</li>
-                        <li>Кредит</li>
-                    </ul>
+                    <div class="service-choice-wrapper">
+                        <ul class="main-service-choice">
+                            <li>Доставка</li>
+                            <li>Гарантия</li>
+                            <li>Кредит</li>
+                        </ul>
+                    </div>
                     <div class="main-service-slider background-delivery">
                         <h4>Доставка</h4>
                         <p>Мы с удовольствием доставим ваш товар прямо<br>
@@ -270,7 +275,7 @@
                     <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
                     <h3 class="visually-hidden">Блок карты</h3>
                     <figure>
-                        <a href="#"><img src="img/Map.png" width="300" height="160" alt="Наш адрес Санкт-Петербург, улица Большая Конюшенная, дом 19/8 на карте"></a>
+                        <a href="#"><img src="img/Map.png" width="300" height="158" alt="Наш адрес Санкт-Петербург, улица Большая Конюшенная, дом 19/8 на карте"></a>
                         <button type="button">Закрыть</button>
                     </figure>
                     <img class="visually-hidden" src="img/Map-popap.png" alt="Наш адрес Санкт-Петербург, улица Большая Конюшенная, дом 19/8 на карте" width="970" height="476">
@@ -332,9 +337,9 @@
                 <h2 class="visually-hidden">Обратная связь</h2>
                 <p class="rights">© 2010–2019 Компания «Техномарт» Все права защищены</p>
                 <ul class="socials">
-                    <li><a href="#"><img src="img/icon-vk.svg" width="26" height="15" alt="Наша компания в соцсети В контакте"></a></li>
-                    <li><a href="#"><img src="img/icon-fb.svg" width="12" height="22" alt=" Наша компания в соцсети Фейсбук"></a></li>
-                    <li><a href="#"><img src="img/icon-insta.svg" width="21" height="21" alt=" Наша компания в соцсети Инстаграмм"></a></li>
+                    <li><a  class="socials-vk" href="#"><img src="img/icon-vk.svg" width="26" height="15" alt="Наша компания в соцсети В контакте"></a></li>
+                    <li><a  class="socials-fb" href="#"><img src="img/icon-fb.svg" width="12" height="22" alt=" Наша компания в соцсети Фейсбук"></a></li>
+                    <li><a  class="socials-inst" href="#"><img src="img/icon-insta.svg" width="21" height="21" alt=" Наша компания в соцсети Инстаграмм"></a></li>
                 </ul>
                 <div class="contacts-wrapper">
                     <p class="contacts-mail">Обратная связь: <a href="#">mail@htmlacademy.ru</a>
