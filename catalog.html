@@ -33,7 +33,7 @@
                     <div class="top-menu-wrapper">
                         <a class="logo" href="index.html"><img src="img/logo-technomart.svg" alt="Логотип магазина строительной техники Техномарт" width="109" height="18"></a>
                         <ul class="top-menu-list">
-                            <li><a class="search" href="#">Поиск:</a></li>
+                            <li><input class="search" type="search" placeholder="Поиск:"></li>
                             <li><a class="bookmarks" href="#">Закладки:</a></li>
                             <li><a class="cart" href="#">Корзина:</a></li>
                             <li><a class="booking" href="#">Оформить заказ</a></li>
@@ -103,19 +103,20 @@
                         <fieldset class="fieldset-fabricators">
                             <legend>Производители:</legend>
                             <ul>
-                                <li><label><input type="checkbox" name="BOSH">Bosch</label></li>
-                                <li><label><input type="checkbox" name="INTERSCOL">Интерскол</label></li>
-                                <li><label><input type="checkbox" name="MAKITA">Makita</label></li>
-                                <li><label><input type="checkbox" name="DEWALT">Dewalt</label></li>
-                                <li><label><input type="checkbox" name="HITACHI">Hitachi</label></li>
+                                <li><label><input  class="visually-hidden" type="checkbox" name="BOSH"><span class="chekbox-indicator"></span>
+                                Bosch</label></li>
+                                <li><label><input  class="visually-hidden" type="checkbox" name="INTERSCOL"><span class="chekbox-indicator"></span>Интерскол</label></li>
+                                <li><label><input class="visually-hidden" type="checkbox" name="MAKITA"><span class="chekbox-indicator"></span>Makita</label></li>
+                                <li><label><input class="visually-hidden" type="checkbox" name="DEWALT"><span class="chekbox-indicator"></span>Dewalt</label></li>
+                                <li><label><input class="visually-hidden" type="checkbox" name="HITACHI"><span class="chekbox-indicator"></span>Hitachi</label></li>
                             </ul>
                         </fieldset>
                         <!--Выбор по типу питания-->
                         <fieldset class="fieldset-power">
                             <legend>Питание:</legend>
                             <ul>
-                                <li><label><input type="radio" name="pit">Аккумуляторные</label></li>
-                                <li><label><input type="radio" name="pit">Сетевые</label></li>
+                                <li><label><input class="visually-hidden" type="radio" name="pit"><span class="radio-indicator"></span>Аккумуляторные</label></li>
+                                <li><label><input class="visually-hidden" type="radio" name="pit"><span class="radio-indicator"></span>Сетевые</label></li>
                             </ul>
                         </fieldset>
                     </form>
@@ -136,8 +137,8 @@
                             </li>
                         </ul>
                         <div class="icon-wrapper">
-                            <a href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="Вверх"></a>
-                            <a href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="Вниз"></a>
+                            <a href="#"><span class="visually-hidden">вверх</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10"><path fill="#c5c5c5" d="M5.5 0L0 10h11z"/></svg></a>
+                            <a href="#"><span class="visually-hidden">вниз</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10"><path fill="#c5c5c5" d="M5.5 10L0 0h11"/></svg></a>
                         </div>
                     </div>
                     <section class="catalog-cards">
@@ -155,8 +156,10 @@
                                     <img class="price-picture" src="img/red-button.svg" alt="12500 p." width="141" height="38">
                                     <b class="price">15500 p.</b>
                                 </p>
-                                <a class="visually-hidden" href="#">купить</a>
-                                <a class="visually-hidden" href="#">в закладки</a>
+                                <div class="catalog-popap">
+                                    <a class="buy-item" href="#">купить</a>
+                                    <a class="in-bookmark" href="#">в закладки</a>
+                                </div>
                             </li>
                             <li>
                                 <span class="visually-hidden">new</span>
@@ -170,8 +173,10 @@
                                     <img class="price-picture" src="img/red-button.svg" alt="12500 p." width="141" height="38">
                                     <b class="price">25500 p.</b>
                                 </p>
-                                <a class="visually-hidden" href="#">купить</a>
-                                <a class="visually-hidden" href="#">в закладки</a>
+                                <div class="catalog-popap">
+                                    <a class="buy-item" href="#">купить</a>
+                                    <a class="in-bookmark" href="#">в закладки</a>
+                                </div>
                             </li>
                             <li>
                                 <span class="catalog-new">new</span>
@@ -184,8 +189,10 @@
                                     <img class="price-picture" src="img/red-button.svg" alt="12500 p." width="141" height="38">
                                     <b class="price">12500 P.</b>
                                 </p>
-                                <a class="visually-hidden" href="#">купить</a>
-                                <a class="visually-hidden" href="#">в закладки</a>
+                                <div class="catalog-popap">
+                                    <a class="buy-item" href="#">купить</a>
+                                    <a class="in-bookmark" href="#">в закладки</a>
+                                </div>
                             </li>
                             <li>
                                 <span class="visually-hidden">new</span>
@@ -199,8 +206,10 @@
                                     <img class="price-picture" src="img/red-button.svg" alt="12500 p." width="141" height="38">
                                     <b class="price">15500 p.</b>
                                 </p>
-                                <a class="visually-hidden" href="#">купить</a>
-                                <a class="visually-hidden" href="#">в закладки</a>
+                                <div class="catalog-popap">
+                                    <a class="buy-item" href="#">купить</a>
+                                    <a class="in-bookmark" href="#">в закладки</a>
+                                </div>
                             </li>
                             <li>
                                 <span class="catalog-new">new</span>
@@ -214,8 +223,10 @@
                                     <img class="price-picture" src="img/red-button.svg" alt="12500 p." width="141" height="38">
                                     <b class="price">25500 p.</b>
                                 </p>
-                                <a class="visually-hidden" href="#">купить</a>
-                                <a class="visually-hidden" href="#">в закладки</a>
+                                <div class="catalog-popap">
+                                    <a class="buy-item" href="#">купить</a>
+                                    <a class="in-bookmark" href="#">в закладки</a>
+                                </div>
                             </li>
                             <li>
                                 <span class="visually-hidden">new</span>
@@ -228,8 +239,10 @@
                                     <img class="price-picture" src="img/red-button.svg" alt="12500 p." width="141" height="38">
                                     <b class="price">12500 P.</b>
                                 </p>
-                                <a class="visually-hidden" href="#">купить</a>
-                                <a class="visually-hidden" href="#">в закладки</a>
+                                <div class="catalog-popap">
+                                    <a class="buy-item" href="#">купить</a>
+                                    <a class="in-bookmark" href="#">в закладки</a>
+                                </div>
                             </li>
                             <li>
                                 <span class="catalog-new">new</span>
@@ -243,8 +256,10 @@
                                     <img class="price-picture" src="img/red-button.svg" alt="12500 p." width="141" height="38">
                                     <b class="price">15500 p.</b>
                                 </p>
-                                <a class="visually-hidden" href="#">купить</a>
-                                <a class="visually-hidden" href="#">в закладки</a>
+                                <div class="catalog-popap">
+                                    <a class="buy-item" href="#">купить</a>
+                                    <a class="in-bookmark" href="#">в закладки</a>
+                                </div>
                             </li>
                             <li>
                                 <span class="visually-hidden">new</span>
@@ -258,8 +273,10 @@
                                     <img class="price-picture" src="img/red-button.svg" alt="12500 p." width="141" height="38">
                                     <b class="price">25500 p.</b>
                                 </p>
-                                <a class="visually-hidden" href="#">купить</a>
-                                <a class="visually-hidden" href="#">в закладки</a>
+                                <div class="catalog-popap">
+                                    <a class="buy-item" href="#">купить</a>
+                                    <a class="in-bookmark" href="#">в закладки</a>
+                                </div>
                             </li>
                             <li>
                                 <span class="visually-hidden">new</span>
@@ -272,8 +289,10 @@
                                     <img class="price-picture" src="img/red-button.svg" alt="12500 p." width="141" height="38">
                                     <b class="price">12500 P.</b>
                                 </p>
-                                <a class="visually-hidden" href="#">купить</a>
-                                <a class="visually-hidden" href="#">в закладки</a>
+                                <div class="catalog-popap">
+                                    <a class="buy-item" href="#">купить</a>
+                                    <a class="in-bookmark" href="#">в закладки</a>
+                                </div>
                             </li>
                         </ul>
                         <div class="visually-hidden">
