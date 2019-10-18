@@ -4,17 +4,17 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%1FPT+Sans&display=swap&subset=cyrillic" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%1FPT+Sans&display=swap&subset=cyrillic" rel="stylesheet"> -->
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="js/jquery.pixlayout.0.9.7.js"></script>
     <script type="text/javascript">
         $(function() {
             $.pixlayout({
                 clip: true,
-                src: "technomart-index-3.jpg",
+                src: "technomart-index.jpg",
                 show: true,
                 center: true,
                 top: 0,
@@ -22,8 +22,7 @@
                 pervious: false
             });
         });
-    </script>
-
+    </script> -->
 </head>
 
 <body>
@@ -35,7 +34,8 @@
                         <a class="logo" href="index.html"><img src="img/logo-technomart.svg" alt="Логотип магазина строительной техники Техномарт" width="109" height="18"></a>
                         <ul class="top-menu-list">
                             <li><input class="search" type="search" placeholder="Поиск:"></li>
-                            <li><a class="bookmarks" href="#">Закладки:</a></li>
+                            <li><a class="bookmarks" href="#">Закладки:</a>
+                            </li>
                             <li><a class="cart" href="#">Корзина:</a></li>
                             <li><a class="booking" href="#">Оформить заказ</a></li>
                         </ul>
@@ -46,8 +46,7 @@
                 <div class="container">
                     <div class="header-wrapper">
                         <p class="site-name">Интернет-магазин строительных материалов<br>и инструментов для ремонта</p>
-                        <div class="header-contacts">
-                            <a class="header-tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
+                        <div class="header-contacts"> <a class="header-tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
                             <address class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
                         </div>
                         <!--Блок авторизации-->
@@ -58,15 +57,17 @@
                             </ul>
                         </div>
                     </div>
-                    <ul class="header-nav">
-                        <li><a href="index.html">Главная</a></li>
-                        <li><a href="#">Компания</a></li>
-                        <li><a href="catalog.html">Каталог</a></li>
-                        <li><a href="#">Новости</a></li>
-                        <li><a href="#">Спецпредложения</a></li>
-                        <li><a href="#">Доставка</a></li>
-                        <li><a href="#">Контакты</a></li>
-                    </ul>
+                    <div class="header-nav">
+                        <ul>
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="#">Компания</a></li>
+                            <li><a href="catalog.html">Каталог</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Спецпредложения</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -80,7 +81,7 @@
                 <h2 class="visually-hidden">Промоблок</h2>
                 <ul class="main-promo promo-top-wrapper">
                     <li class="main-materials">
-                       <span class="promo-new">new</span>
+                        <span class="promo-new">new</span>
                         <h3>Материалы</h3>
                         <a href="#">На любой вкус</a>
                     </li>
@@ -111,8 +112,11 @@
                                 <img src="img/Slider-perf.jpg" alt="Перфораторы" width="620" height="266">
                             </figure>
                         </div>
-                        <a class="main-links" href="catalog.html">Открыть каталог</a>
-                        </section>
+                        <a class="main-links slider-batton" href="catalog.html">Открыть каталог</a>
+                        <div class="slider-point-wrapper">
+                            <span class="slider-point-white "></span><span class="slider-point-red right"></span><span class="slider-point-white"></span>
+                        </div>
+                    </section>
                     <ul class="main-promo">
                         <li class="main-discounts">
                             <h3>Скидки 50%</h3><span class="visually-hidden">new</span>
@@ -131,7 +135,7 @@
                     <a class="main-links" href="#">Все популярные товары</a>
                 </div>
                 <ul class="main-items">
-                    <li>
+                    <li class="card-item">
                         <span class="visually-hidden">new</span>
                         <h3>
                             <p>Перфоратор BOSCH<br>
@@ -144,7 +148,7 @@
                             <b class="price">25500 p.</b>
                         </p>
                     </li>
-                    <li>
+                    <li class="card-item">
                         <span class="visually-hidden">new</span>
                         <h3>
                             <p>Перфоратор BOSCH<br>
@@ -157,7 +161,7 @@
                             <b class="price">15500 p.</b>
                         </p>
                     </li>
-                    <li>
+                    <li class="card-item">
                         <span class="visually-hidden">new</span>
                         <h3>
                             <p>Перфоратор BOSCH<br>
@@ -170,7 +174,7 @@
                             <b class="price">25500 p.</b>
                         </p>
                     </li>
-                    <li>
+                    <li class="card-item">
                         <span class="catalog-new">new</span>
                         <h3>
                             <p>Перфоратор BOSCH<br>
@@ -226,20 +230,20 @@
                 <div class="main-service-choice-slider-wrapper">
                     <div class="service-choice-wrapper">
                         <ul class="main-service-choice">
-                            <li>Доставка</li>
-                            <li>Гарантия</li>
-                            <li>Кредит</li>
+                            <li class="choice-delivery">Доставка</li>
+                            <li class="choice-guarantee">Гарантия</li>
+                            <li class="choice-credit">Кредит</li>
                         </ul>
                     </div>
-                    <div class="main-service-slider background-delivery">
+                    <div class="main-service-slider delivery  ">
                         <h4>Доставка</h4>
-                        <p>Мы с удовольствием доставим ваш товар прямо<br>
-                            к вашему подъезду совершенно бесплатно!<br>
-                            Ведь мы неплохо заработаем,<br>
-                            поднимая его на ваш этаж!</p>
+                        <p>Мы с удовольствием доставим ваш товар прямо</p>
+                        <p>к вашему подъезду совершенно бесплатно!</p>
+                        <p>Ведь мы неплохо заработаем,</p>
+                        <p>поднимая его на ваш этаж!</p>
 
                     </div>
-                    <div class="visually-hidden">
+                    <div class="main-service-slider guarantee visually-hidden">
                         <h4>Гарантия</h4>
                         <p>Если купленный у нас товар поломается или заискрит,</p>
                         <p>а также в случае пожара, спровоцированного его возгоранием,</p>
@@ -247,11 +251,11 @@
                         <p>сгоревший товар на новый.</p>
                         <p>Дом уж восстановите как-нибудь сами.</p>
                     </div>
-                    <div class="visually-hidden">
+                    <div class="main-service-slider credit visually-hidden">
                         <h4>Кредит</h4>
                         <p>Залезть в долговую яму стало проще!</p>
                         <p>Кредитные консультанты придут вам на помощь.</p>
-                        <a href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
+                        <a class="main-links credit-batton" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
                     </div>
                 </div>
             </div>
@@ -274,10 +278,10 @@
                     <h2>КОНТАКТЫ</h2>
                     <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
                     <h3 class="visually-hidden">Блок карты</h3>
-                    <figure>
-                        <a href="#"><img src="img/Map.png" width="300" height="158" alt="Наш адрес Санкт-Петербург, улица Большая Конюшенная, дом 19/8 на карте"></a>
-                        </figure>
-                    <a class="main-links" href="#">Заблудились? Напишите нам!</a>
+                    <figure class="map">
+                        <a><img src="img/Map.png" width="300" height="158" alt="Наш адрес Санкт-Петербург, улица Большая Конюшенная, дом 19/8 на карте"></a>
+                    </figure>
+                    <a class="main-links feedback-link " href="#">Заблудились? Напишите нам!</a>
                     <div class="visually-hidden">
                         <form action="https://echo.htmlacademy.ru" method="post">
                             <p>
@@ -334,9 +338,9 @@
                 <h2 class="visually-hidden">Обратная связь</h2>
                 <p class="rights">© 2010–2019 Компания «Техномарт» Все права защищены</p>
                 <ul class="socials">
-                    <li><a  class="socials-vk" href="#"><img src="img/icon-vk.svg" width="26" height="15" alt="Наша компания в соцсети В контакте"></a></li>
-                    <li><a  class="socials-fb" href="#"><img src="img/icon-fb.svg" width="12" height="22" alt=" Наша компания в соцсети Фейсбук"></a></li>
-                    <li><a  class="socials-inst" href="#"><img src="img/icon-insta.svg" width="21" height="21" alt=" Наша компания в соцсети Инстаграмм"></a></li>
+                    <li><a class="socials-vk" href="#"><img src="img/icon-vk.svg" width="26" height="15" alt="Наша компания в соцсети В контакте"></a></li>
+                    <li><a class="socials-fb" href="#"><img src="img/icon-fb.svg" width="12" height="22" alt=" Наша компания в соцсети Фейсбук"></a></li>
+                    <li><a class="socials-inst" href="#"><img src="img/icon-insta.svg" width="21" height="21" alt=" Наша компания в соцсети Инстаграмм"></a></li>
                 </ul>
                 <div class="contacts-wrapper">
                     <p class="contacts-mail">Обратная связь: <a href="#">mail@htmlacademy.ru</a>
@@ -346,30 +350,39 @@
             </div>
         </section>
     </footer>
+
+    <!-- Модальные окна -->
+    <!-- Форма обратной связи -->
     <section class=" modal modal-feedback">
-       <form  class="modal-form" action="https//echo.htmlacademy.ru" method="post">
-           <div class="modal-top-wrapper">
-               <p class="modal-box">
-                   <label  class="modal-name" for="user-name">Ваше имя:</label>
-                   <input class="modal-input" id="user-name" type="text" name="modal-name" placeholder="Имя Фамилия">
-               </p>
-               <p class="modal-box">
-                   <label  class="modal-mail" for="user-mail">Ваш e-mail:</label>
-                   <input class="modal-input" id="user-mail" type="text" name="modal-mail" placeholder="email@example.com">
-               </p>
-           </div>
-           <p class="modal-box-textarea"><label  class="modal-letter" for="letter-text">Текст письма:</label>
-                    <textarea class="modal-letter-text" id="letter-text" name="modal-letter"  placeholder="В свободной форме"></textarea>
-                    </p>
-                    </form>
-                    <div class="modal-batton-wrapper">
-                        <button class="modal-batton" type="submit">отправить</button>
-                    </div>
+        <form class="modal-form" action="https://echo.htmlacademy.ru" method="post" name="mailform">
+            <div class="modal-top-wrapper">
+                <p class="modal-box">
+                    <label class="modal-name" for="user-name">Ваше имя:</label>
+                    <input class="modal-input" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+                </p>
+                <p class="modal-box">
+                    <label class="modal-mail" for="user-mail">Ваш e-mail:</label>
+                    <input class="modal-input" id="user-mail" type="text" name="email" placeholder="email@example.com">
+                </p>
+            </div>
+            <p class="modal-box-textarea"><label class="modal-letter" for="letter-text">Текст письма:</label>
+                <textarea class="modal-letter-text" id="letter-text" name="modal-letter" placeholder="В свободной форме"></textarea>
+            </p>
+            <button class="modal-batton" type="submit">отправить</button>
+        </form>
+        <div class="modal-batton-wrapper"></div>
         <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
+
+    <!-- Карта -->
     <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <img src="img/Map-popap.png" width="940" height="448" alt="Офис компании по адресу:Санкт-Петербург, улица Большая Конюшенная, дом 19/8 на карте">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CGwDIK8K" width="940" height="448" frameborder="1" allowfullscreen="true"></iframe>
         <button class="map-close " type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
+    <script type="text/javascript" src="js/feedback-popap.js"></script>
+    <script type="text/javascript" src="js/map-popap.js"></script>
+<script type="text/javascript" src="js/servise-slider.js"></script>
 </body></html>
+
+
