@@ -11,6 +11,7 @@ link.addEventListener("click", function (evt) {
 close.addEventListener("click", function (evt) {
     evt.preventDefault();
     popap.classList.remove("modal-show");
+	popap.classList.remove("modal-error");
 });
 
 // Закрываем по ESC

@@ -36,7 +36,7 @@
                             <li><input class="search" type="search" placeholder="Поиск:"></li>
                             <li><a class="bookmarks" href="#">Закладки:</a>
                             </li>
-                            <li><a class="cart" href="#">Корзина:</a></li>
+                            <li class="basket"><a class="cart" href="#">Корзина:</a></li>
                             <li><a class="booking" href="#">Оформить заказ</a></li>
                         </ul>
                     </div>
@@ -84,13 +84,16 @@
                         <span class="promo-new">new</span>
                         <h3>Материалы</h3>
                         <a href="#">На любой вкус</a>
-                    </li>
+                       </li>
                     <li class="main-instrument">
-                        <h3>Инструмент</h3><span class="visually-hidden">new</span>
+                       <span class="visually-hidden">new</span>
+                        <h3>Инструмент</h3>
                         <a href="#">На все случаи</a>
                     </li>
                     <li class="main-technic">
-                        <h3>Техника</h3><span class="visually-hidden">new</span><a href="#">Для стройки</a>
+                       <span class="visually-hidden">new</span>
+                        <h3>Техника</h3>
+                        <a href="#">Для стройки</a>
                     </li>
                 </ul>
                 <div class="promo-bootom-wrapper">
@@ -119,13 +122,15 @@
                     </section>
                     <ul class="main-promo">
                         <li class="main-discounts">
-                            <h3>Скидки 50%</h3><span class="visually-hidden">new</span>
+                           <span class="visually-hidden">new</span>
+                            <h3>Скидки 50%</h3>
                             <a href="#">На 350 товаров</a>
                         </li>
                         <li class="main-delivery">
-                            <h3>Доставка</h3><span class="visually-hidden">new</span>
+                           <span class="visually-hidden">new</span>
+                            <h3>Доставка</h3>
                             <a href="#">Бесплатно</a>
-                        </li>
+                          </li>
                     </ul>
                 </div>
             </section>
@@ -142,11 +147,15 @@
                                 BFG 9000</p>
                         </h3>
                         <p>
-                            <img src="img/Perforator_1.png" alt="Перфоратор BOSCH BFG 9000" width="218" height="170">
+                            <img class="cardimg" src="img/Perforator_1.png" alt="Перфоратор BOSCH BFG 9000" width="218" height="170">
                             <b class="crossed">32500 p.</b>
                             <img class="price-picture" src="img/red-button.svg" alt="12500 p." width="141" height="38">
                             <b class="price">25500 p.</b>
                         </p>
+                        <div class="cards-popap">
+                            <a class="buy-item" href="#" onclick="return catalogPopup(this);">купить</a>
+                            <a class="in-bookmark" href="#">в закладки</a>
+                        </div>
                     </li>
                     <li class="card-item">
                         <span class="visually-hidden">new</span>
@@ -155,11 +164,15 @@
                                 BFG 3000</p>
                         </h3>
                         <p>
-                            <img src="img/Perforator.png" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
+                            <img class="cardimg" src="img/Perforator.png" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
                             <b class="crossed">22500 p.</b>
                             <img class="price-picture" src="img/red-button.svg" alt="12500 p." width="141" height="38">
                             <b class="price">15500 p.</b>
                         </p>
+                        <div class="cards-popap">
+                            <a class="buy-item" href="#" onclick="return catalogPopup(this);">купить</a>
+                            <a class="in-bookmark" href="#">в закладки</a>
+                        </div>
                     </li>
                     <li class="card-item">
                         <span class="visually-hidden">new</span>
@@ -168,11 +181,15 @@
                                 BFG 6000</p>
                         </h3>
                         <p>
-                            <img src="img/Perforator_3.png" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
+                            <img class="cardimg" src="img/Perforator_3.png" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
                             <b class="crossed">30500 p.</b>
                             <img class="price-picture" src="img/red-button.svg" alt="12500 p." width="141" height="38">
                             <b class="price">25500 p.</b>
                         </p>
+                        <div class="cards-popap">
+                            <a class="buy-item" href="#" onclick="return catalogPopup(this);">купить</a>
+                            <a class="in-bookmark" href="#">в закладки</a>
+                        </div>
                     </li>
                     <li class="card-item">
                         <span class="catalog-new">new</span>
@@ -181,12 +198,24 @@
                                 BFG 2000</p>
                         </h3>
                         <p>
-                            <img src="img/Perforator.png" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
+                            <img class="cardimg" src="img/Perforator.png" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
                             <img class="price-picture" src="img/red-button.svg" alt="12500 p." width="141" height="38">
                             <b class="price">12500 P.</b>
                         </p>
+                        <div class="cards-popap">
+                            <a class="buy-item" href="#" onclick="return catalogPopup(this);">купить</a>
+                            <a class="in-bookmark" href="#">в закладки</a>
+                        </div>
                     </li>
                 </ul>
+                <div class="modal catalog-modal">
+							<p class="catalog-modal-title">Товар добавлен в корзину!</p>
+							<div class="catalog-modal-menu">
+								<p><a class="main-links" href="#">оформить заказ </a></p>
+								<p><a class="main-links right-batton" href="catalog.html">продолжить покупки</a></p>
+							</div>
+							<button class="catalog-modal-close" type="button"><span class="visually-hidden">Выход</span></button>
+						</div>
             </section>
             <section>
                 <div class="main-popular-maker">
@@ -382,7 +411,8 @@
     </section>
     <script type="text/javascript" src="js/feedback-popap.js"></script>
     <script type="text/javascript" src="js/map-popap.js"></script>
-<script type="text/javascript" src="js/servise-slider.js"></script>
+    <script type="text/javascript" src="js/servise-slider.js"></script>
+    <script type="text/javascript" src="js/catalog-popup.js"></script>
 </body></html>
 
 
