@@ -26,7 +26,6 @@ window.addEventListener("keydown", function (evt) {
     }
 });
 
-
 // Проверка на заполнение полей
 
 var form = popap.querySelector("form");
