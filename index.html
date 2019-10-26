@@ -5,23 +5,7 @@
 	<meta charset="utf-8">
 	<title>HTML Academy: Техномарт</title>
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-
-	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-	<script type="text/javascript" src="js/jquery.pixlayout.0.9.7.js"></script>
-	<script type="text/javascript">
-		$(function() {
-			$.pixlayout({
-				clip: true,
-				src: "technomart-index.jpg",
-				show: true,
-				center: true,
-				top: 0,
-				left: 0,
-				pervious: false
-			});
-		});
-	</script>
+	<link href="css/style-compress.css" rel="stylesheet">
 </head>
 
 <body>
@@ -139,14 +123,15 @@
 					<a class="main-links" href="#">Все популярные товары</a>
 				</div>
 				<ul class="main-items">
-					<li class="card-item">
+					<li class="card-item" tabindex="0">
 						<span class="visually-hidden">new</span>
 						<img class="cardimg" src="img/Perforator_1.png" alt="Перфоратор BOSCH BFG 9000" width="218" height="170">
+
+						<div class="cards-popap">
+							<a class="buy-item" href="#" onclick="return catalogPopup(this);">купить</a>
+							<a class="in-bookmark" href="#">в закладки</a>
+						</div>
 						<h3>
-							<div class="cards-popap">
-								<a class="buy-item" href="#" onclick="return catalogPopup(this);">купить</a>
-								<a class="in-bookmark" href="#">в закладки</a>
-							</div>
 							Перфоратор BOSCH<br>
 							BFG 9000
 						</h3>
@@ -155,14 +140,15 @@
 							<b class="price">25500 p.</b>
 						</div>
 					</li>
-					<li class="card-item">
+					<li class="card-item" tabindex="0">
 						<span class="visually-hidden">new</span>
 						<img class="cardimg" src="img/Perforator.png" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
+
+						<div class="cards-popap">
+							<a class="buy-item" href="#" onclick="return catalogPopup(this);">купить</a>
+							<a class="in-bookmark" href="#">в закладки</a>
+						</div>
 						<h3>
-							<div class="cards-popap">
-								<a class="buy-item" href="#" onclick="return catalogPopup(this);">купить</a>
-								<a class="in-bookmark" href="#">в закладки</a>
-							</div>
 							Перфоратор BOSCH<br>
 							BFG 3000
 						</h3>
@@ -171,14 +157,15 @@
 							<b class="price">15500 p.</b>
 						</div>
 					</li>
-					<li class="card-item">
+					<li class="card-item" tabindex="0">
 						<span class="visually-hidden">new</span>
 						<img class="cardimg" src="img/Perforator_3.png" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
+
+						<div class="cards-popap">
+							<a class="buy-item" href="#" onclick="return catalogPopup(this);">купить</a>
+							<a class="in-bookmark" href="#">в закладки</a>
+						</div>
 						<h3>
-							<div class="cards-popap">
-								<a class="buy-item" href="#" onclick="return catalogPopup(this);">купить</a>
-								<a class="in-bookmark" href="#">в закладки</a>
-							</div>
 							Перфоратор BOSCH<br>
 							BFG 6000
 						</h3>
@@ -187,14 +174,15 @@
 							<b class="price">25500 p.</b>
 						</div>
 					</li>
-					<li class="card-item">
+					<li class="card-item" tabindex="0">
 						<span class="catalog-new">new</span>
 						<img class="cardimg" src="img/Perforator.png" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
+
+						<div class="cards-popap">
+							<a class="buy-item" href="#" onclick="return catalogPopup(this);">купить</a>
+							<a class="in-bookmark" href="#">в закладки</a>
+						</div>
 						<h3>
-							<div class="cards-popap">
-								<a class="buy-item" href="#" onclick="return catalogPopup(this);">купить</a>
-								<a class="in-bookmark" href="#">в закладки</a>
-							</div>
 							Перфоратор BOSCH<br>
 							BFG 2000
 						</h3>
@@ -266,7 +254,6 @@
 						<p>к вашему подъезду совершенно бесплатно!</p>
 						<p>Ведь мы неплохо заработаем,</p>
 						<p>поднимая его на ваш этаж!</p>
-
 					</div>
 					<div class="main-service-slider guarantee visually-hidden">
 						<h4>Гарантия</h4>
@@ -290,7 +277,7 @@
 				<section class="main-about-delivery">
 					<h2>КОМПАНИЯ «Техномарт»</h2>
 					<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-					<p>Мы можем доставить ваш товар в самые отдаленные точки России!<br> Техномарт работает со многими транспортными компаниями:</p>
+					<p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со многими транспортными компаниями:</p>
 					<ul class="main-about-transport">
 						<li>Деловые линии</li>
 						<li>Автотрейдинг</li>
@@ -306,23 +293,6 @@
 						<a><img src="img/Map.png" width="300" height="158" alt="Наш адрес Санкт-Петербург, улица Большая Конюшенная, дом 19/8 на карте"></a>
 					</figure>
 					<a class="main-links feedback-link " href="#">Заблудились? Напишите нам!</a>
-					<div class="visually-hidden">
-						<form action="https://echo.htmlacademy.ru" method="post">
-							<p>
-								<label for="name">Ваше имя:</label><input type="text" name="name" placeholder="Имя Фамилия" id="name">
-							</p>
-							<p>
-								<label for="mail">Ваш e-mail:</label>
-								<input type="text" name="mail" placeholder="email@example.com" id="mail">
-							</p>
-							<p>
-								<label for="text">Текст письма:</label>
-								<textarea name="text" placeholder="В свободной форме" id="text"></textarea>
-							</p>
-							<button type="submit">Отправить</button>
-						</form>
-						<button type="button">Закрыть</button>
-					</div>
 				</section>
 			</div>
 		</div>
@@ -335,7 +305,7 @@
 					<a class="logo" href="index.html"><img src="img/logo-technomart.svg" alt="Логотип магазина строительной техники Техномарт" width="137" height="22"></a>
 					<nav>
 						<ul class="footer-nav-top">
-							<li><a href="#">Компания</a></li>
+							<li><a href="index.html">Компания</a></li>
 							<li><a href="#">Новости</a></li>
 							<li><a href="catalog.html">Каталог</a></li>
 							<li><a href="#">Доставка</a></li>
@@ -346,7 +316,7 @@
 				<div class="footer-nav-bottom-wrapper">
 					<div class="footer-contacts">
 						<address class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-						<a href="tel:+78125550555">+7 (812) 555-05-55</a>
+						<a class="tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
 					</div>
 					<ul class="footer-nav-bottom">
 						<li><a href="#">Материалы</a></li>
@@ -358,7 +328,7 @@
 			</div>
 		</section>
 		<section class="contacts">
-		<h2 class="visually-hidden">Обратная связь</h2>
+			<h2 class="visually-hidden">Обратная связь</h2>
 			<div class="container">
 				<p class="rights">© 2010–2019 Компания «Техномарт» Все права защищены</p>
 				<ul class="socials">
@@ -399,16 +369,17 @@
 		<button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
 	</section>
 
-	<!-- Карта -->
+	<!--Kарта-->
 	<section class="modal modal-map">
 		<h2 class="visually-hidden">Как до нас добраться</h2>
 		<iframe src="https://yandex.ru/map-widget/v1/-/CGwDIK8K" width="940" height="448" allowfullscreen></iframe>
 		<button class="map-close " type="button"><span class="visually-hidden">Закрыть</span></button>
 	</section>
+	<!--Подключаем скрипты-->
 	<script type="text/javascript" src="js/feedback-popap-compress.js"></script>
 	<script type="text/javascript" src="js/map-popap-compress.js"></script>
-	<script type="text/javascript" src="js/servise-slider.js"></script>
+	<script type="text/javascript" src="js/servise-slider-compress.js"></script>
 	<script type="text/javascript" src="js/catalog-popup-compress.js"></script>
-</body></html>
+</body>
 
-
+</html>
