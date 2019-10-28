@@ -1,70 +1,72 @@
+
+
 /*-----------Подключаем шрифты----------*/
 
 @font-face {
 	font-weight: normal;
-	font-family: 'Cuprum';
-	src: local('Cuprum'),
-		url('../fonts/Cuprum/Cuprum-Regular.eot');
-	src: url('Cuprum-Regular.eot? #iefix') format("eot"),
-		url('../fonts/Cuprum-Regular.woff') format("woff"),
-		url('../fonts/Cuprum-Regular.woff2') format('woff2'),
-		url('../fonts/Cuprum-Regular') format("truetype");
+	font-family: "Cuprum";
+	src: local("Cuprum"),
+		url("../fonts/Cuprum/Cuprum-Regular.eot");
+	src: url("Cuprum-Regular.eot? #iefix") format("eot"),
+		url("../fonts/Cuprum-Regular.woff") format("woff"),
+		url("../fonts/Cuprum-Regular.woff2") format("woff2"),
+		url("../fonts/Cuprum-Regular") format("truetype");
 }
 
 @font-face {
 	font-weight: normal;
-	font-family: 'Cuprum-Italic';
-	src: local('Cuprum-Italic'),
-		url('../fonts/Cuprum/Cuprum-Italic.eot');
-	src: url('Cuprum-Italic.eot? #iefix') format("eot"),
-		url('../fonts/cuprumitalic.woff') format("woff"),
-		url('../fonts/cuprumitalic.woff2') format('woff2'),
-		url('../fonts/Cuprum-Italic.ttf') format('truetype');
+	font-family: "Cuprum-Italic";
+	src: local("Cuprum-Italic"),
+		url("../fonts/Cuprum/Cuprum-Italic.eot");
+	src: url("Cuprum-Italic.eot? #iefix") format("eot"),
+		url("../fonts/cuprumitalic.woff") format("woff"),
+		url("../fonts/cuprumitalic.woff2") format("woff2"),
+		url("../fonts/Cuprum-Italic.ttf") format("truetype");
 }
 
 @font-face {
 	font-weight: normal;
-	font-family: 'Cuprum-Bold';
-	src: local('Cuprum-Bold'),
-		url('../fonts/Cuprum/Cuprum-Bold.eot');
-	src: url('Cuprum-Bold.eot? #iefix') format("eot"),
-		url('../fonts/Cuprum-Bold.woff') format("woff"),
-		url('../fonts/Cuprum-Bold.woff2') format('woff2'),
-		url('../fonts/Cuprum-Bold') format('truetype');
+	font-family: "Cuprum-Bold";
+	src: local("Cuprum-Bold"),
+		url("../fonts/Cuprum/Cuprum-Bold.eot");
+	src: url("Cuprum-Bold.eot? #iefix") format("eot"),
+		url("../fonts/Cuprum-Bold.woff") format("woff"),
+		url("../fonts/Cuprum-Bold.woff2") format("woff2"),
+		url("../fonts/Cuprum-Bold") format("truetype");
 }
 
 
 @font-face {
 	font-weight: normal;
-	font-family: 'PT Sans Regular';
-	src: local('PT Sans'),
-		url('../fonts/PT-Sans-Regular.eot');
-	src: url('PT-Sans-Regular.eot? #iefix') format("eot"),
-		url('../fonts/PTSans-Regular.woff') format("woff"),
-		url('../fonts/PT-Sans-Regular.woff2') format("woff2"),
-		url('../fonts/PT-Sans-Regular') format("truetype");
+	font-family: "PT Sans Regular";
+	src: local("PT Sans"),
+		url("../fonts/PT-Sans-Regular.eot");
+	src: url("PT-Sans-Regular.eot? #iefix") format("eot"),
+		url("../fonts/PTSans-Regular.woff") format("woff"),
+		url("../fonts/PT-Sans-Regular.woff2") format("woff2"),
+		url("../fonts/PT-Sans-Regular") format("truetype");
 }
 
 @font-face {
 	font-weight: normal;
-	font-family: 'PT Sans Bold';
-	src: local('PT Sans'),
-		url('../fonts/PT_Sans_Bold.eot');
-	src: url('PT_Sans_Bold.eot? #iefix') format("eot"),
-		url('../fonts/ptsansbold.woff') format("woff"),
-		url('../fonts/ptsansbold.woff2') format("woff2"),
-		url('../fonts/ptsansbold.ttf') format("truetype");
+	font-family: PT Sans Bold;
+	src: local("PT Sans"),
+		url("../fonts/PT_Sans_Bold.eot");
+	src: url("PT_Sans_Bold.eot? #iefix") format("eot"),
+		url("../fonts/ptsansbold.woff") format("woff"),
+		url("../fonts/ptsansbold.woff2") format("woff2"),
+		url("../fonts/ptsansbold.ttf") format("truetype");
 }
 
 @font-face {
 	font-weight: normal;
-	font-family: 'Gill Sans';
-	src: local('Gill Sans'),
-		url('../fonts/GillSans-SemiBoldItalic.eot');
-	src: url('GillSans-SemiBoldItalic.eot? #iefix') format("eot"),
-		url('../fonts/GillSans-SemiBoldItalic.woff') format("woff"),
-		url('../fonts/GillSans-SemiBoldItalic.woff2') format("woff2"),
-		url('../fonts/GillSans-SemiBoldItalic') format("truetype");
+	font-family: "Gill Sans";
+	src: local("Gill Sans"),
+		url("../fonts/GillSans-SemiBoldItalic.eot");
+	src: url("GillSans-SemiBoldItalic.eot? #iefix") format("eot"),
+		url("../fonts/GillSans-SemiBoldItalic.woff") format("woff"),
+		url("../fonts/GillSans-SemiBoldItalic.woff2") format("woff2"),
+		url("../fonts/GillSans-SemiBoldItalic") format("truetype");
 }
 
 /*-----------Общие стили----------------*/
@@ -79,7 +81,8 @@ body {
 
 html,
 body {
-	min-width: 1200px;
+	min-width: 960px;
+	
 }
 
 a {
@@ -92,8 +95,8 @@ a {
 
 /*---Подсветка TAB----*/
 
-batton:focus,
-nav input:focus,
+
+.nav input:focus,
 .fieldset-fabricators label:focus,
 .catalog-filters input:focus {
 	outline: 2px solid blue;
@@ -102,7 +105,7 @@ nav input:focus,
 
 .main-items,
 .modal-form input[type="text"],
-textarea,
+.modal-form textarea,
 .main-service p,
 .main-about p,
 .catalog-promote-item p,
@@ -133,7 +136,8 @@ textarea,
 }
 
 
-address {
+.footer-nav address,
+.header address {
 	font-style: normal;
 	font-weight: normal;
 	line-height: 25px;
@@ -315,7 +319,7 @@ address {
 
 }
 
-input[type="search"]:focus {
+.top-menu input[type="search"]:focus {
 	background-color: #ffffff;
 	background-image: url(../img/icon-search-focus.svg);
 	background-repeat: no-repeat;
@@ -325,15 +329,15 @@ input[type="search"]:focus {
 
 }
 
-input[type="search"]::-webkit-input-placeholder {
+.top-menu input[type="search"]::-webkit-input-placeholder {
 	color: #ffffff;
 }
 
-input[type="search"]::-moz-placeholder {
+.top-menu input[type="search"]::-moz-placeholder {
 	color: #ffffff;
 }
 
-input[type="search"]:-ms-input-placeholder {
+.top-menu input[type="search"]:-ms-input-placeholder {
 	color: #ffffff;
 }
 
@@ -496,7 +500,7 @@ input[type="search"]:-ms-input-placeholder {
 }
 
 .header-autorize li:first-child,
-.header-autorize li:first-child a {
+.login {
 	width: 123px;
 }
 
@@ -578,6 +582,7 @@ input[type="search"]:-ms-input-placeholder {
 
 .catalog-header-autorize a {
 	display: inline;
+width: 0px
 }
 
 .catalog-header-autorize a:active {
@@ -614,8 +619,9 @@ input[type="search"]:-ms-input-placeholder {
 	opacity: 0.3;
 }
 
+
 .catalog-autorize-nav {
-	width: 100%;
+	width: 300px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -625,8 +631,8 @@ input[type="search"]:-ms-input-placeholder {
 	-webkit-box-pack: justify;
 	justify-content: space-between;
 	padding-top: 1px;
-	padding-right: 90px;
-	margin-left: 18px;
+	padding-right: 73px;
+	padding-left: 18px;
 	position: relative;
 }
 
@@ -635,7 +641,7 @@ input[type="search"]:-ms-input-placeholder {
 	position: absolute;
 	background-repeat: no-repeat;
 	top: 8px;
-	left: 90px;
+	left: 108px;
 
 	width: 4px;
 	height: 4px;
@@ -752,7 +758,7 @@ input[type="search"]:-ms-input-placeholder {
 	overflow: hidden;
 }
 
-.main-promo li a {
+.main-promo a {
 	display: block;
 	width: 135px;
 	height: 38px;
@@ -766,15 +772,16 @@ input[type="search"]:-ms-input-placeholder {
 	background-color: rgba(0, 0, 0, 0.1);
 }
 
-.main-promo li a:hover {
+.main-promo a:hover {
 	background-color: rgba(0, 0, 0, 0.2);
 }
 
-.main-promo li a:focus {
-	outline: 2px solid blue;
+.main-promo a:focus {
+	box-shadow: 0 0 0 1px #2f7cc0;
+	border-radius: 3px;
 }
 
-.main-promo li a:active {
+.main-promo a:active {
 	background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -893,9 +900,11 @@ input[type="search"]:-ms-input-placeholder {
 /*-------Блок слайдера------*/
 .promo-slider {
 	width: 620px;
+	height: 266px;
 	font-size: 18px;
 	color: #ffffff;
 	position: relative;
+	background-color: #685c53;
 }
 
 .slider-left,
@@ -906,6 +915,8 @@ input[type="search"]:-ms-input-placeholder {
 	height: 45px;
 	background-color: inherit;
 	background-repeat: no-repeat;
+
+	cursor: pointer;
 }
 
 .promo-slider::before,
@@ -956,8 +967,18 @@ input[type="search"]:-ms-input-placeholder {
 	border-radius: 3px;
 }
 
+.main-links:hover {
+	background-color: #ca2c37;
+}
+
+.main-links:active {
+	background-color: #ba2732;
+}
+
 .main-links:focus {
-	outline: 2px solid blue;
+	box-shadow:
+		0 0 0 1px #fff,
+		0 0 0 2px #2f7cc0;
 }
 
 .slider-batton {
@@ -1053,6 +1074,7 @@ input[type="search"]:-ms-input-placeholder {
 
 }
 
+
 .main-popular .main-links,
 .main-popular-maker .main-links {
 	width: 252px;
@@ -1085,7 +1107,6 @@ input[type="search"]:-ms-input-placeholder {
 	line-height: 20px;
 	display: -webkit-box;
 	display: -ms-flexbox;
-
 	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
@@ -1124,8 +1145,8 @@ input[type="search"]:-ms-input-placeholder {
 }
 
 .main-items h3 {
-	text-align: center;
-	margin: 0px;
+	width: 170px;
+	margin: 0px auto;
 	padding-top: 9px;
 	padding-bottom: 10px;
 }
@@ -1135,6 +1156,10 @@ input[type="search"]:-ms-input-placeholder {
 	color: #a9a9a9;
 	text-decoration: line-through;
 	text-transform: uppercase;
+
+	display: inline-block;
+	vertical-align: bottom;
+
 }
 
 .price-arrow {
@@ -1144,7 +1169,7 @@ input[type="search"]:-ms-input-placeholder {
 	margin-left: 42px;
 	margin-top: 9px;
 	padding-top: 9px;
-	padding-left: 19px;
+	padding-left: 16px;
 	position: relative;
 
 	background-color: #ee3643;
@@ -1236,17 +1261,16 @@ input[type="search"]:-ms-input-placeholder {
 .catalog-promote-item p {
 	font-size: 13px;
 	line-height: 24px;
-	font-weight: normal;
-}
-
-.main-service p {
-	margin-top: 23px;
 }
 
 .main-service-top-wrapper {
 	width: 400px;
 	margin-right: 98px;
 	padding-top: 63px;
+}
+
+.main-service p {
+	margin-top: 22px;
 }
 
 .main-service-choice {
@@ -1315,34 +1339,34 @@ input[type="search"]:-ms-input-placeholder {
 	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	width: 967px;
+	width: 940px;
 }
 
 .main-service-slider {
-	width: 640px;
+	width: 700px;
 	min-height: 280px;
-	margin-left: 81px;
-	margin-top: 65px;
+	padding-left: 80px;
+	margin-top: 66px;
 
 	background-repeat: no-repeat;
 }
 
-.main-service-slider h4 {
-	margin-bottom: 23px;
-}
-
-.main-service-slider p {
-	margin: 0px;
+.delivery p {
+	width: 277px;
 }
 
 .delivery {
-	background-image: url("../img/Service.png");
-	background-position: 150px 28px;
+	background-image: url("../img/service.png");
+	background-position: 230px 28px;
 }
 
 .guarantee {
-	background-image: url("../img/Garanty.png");
-	background-position: 239px 6px;
+	background-image: url("../img/garanty.png");
+	background-position: 312px 6px;
+}
+
+.guarantee p {
+	width: 377px;
 }
 
 .guarantee h4 {
@@ -1350,8 +1374,8 @@ input[type="search"]:-ms-input-placeholder {
 }
 
 .credit {
-	background-image: url("../img/Credit.png");
-	background-position: 164px 3px;
+	background-image: url("../img/credit.png");
+	background-position: 230px 3px;
 }
 
 .credit-batton {
@@ -1389,13 +1413,31 @@ input[type="search"]:-ms-input-placeholder {
 
 .main-about p {
 	padding-top: 23px;
+
+}
+
+.main-about-text {
 	letter-spacing: 0.13px;
 }
 
-.main-about figure {
-	padding-top: 32px;
-	position: relative;
+.delivery-text {
+	width: 400px;
+	letter-spacing: 0.03px
 }
+
+.contacts-text {
+	width: 178px;
+}
+
+.main-about figure {
+	width: 301px;
+	height: 158px;
+	margin-top: 32px;
+	position: relative;
+	background-color: #eeeae3;
+	cursor: pointer;
+}
+
 
 .main-about-transport {
 	font-size: 18px;
@@ -2211,8 +2253,7 @@ input[type='number'] {
 
 .contacts-mail a,
 .contacts-html a {
-	letter-spacing: 0.9px;
-
+	font-size: 16px;
 }
 
 .contacts-mail a {
@@ -2264,6 +2305,7 @@ input[type='number'] {
 
 .modal-form input[type="text"],
 textarea {
+	outline: none;
 	color: #000000;
 	text-transform: none;
 	width: 100%;
@@ -2282,6 +2324,7 @@ textarea {
 textarea:hover {
 	border-color: #b5b5b5;
 }
+
 
 .modal-form input[type="text"]:focus,
 textarea:focus {
@@ -2527,6 +2570,7 @@ textarea {
 	box-shadow: 0 0 10px 5px rgba(0, 0, 0, .35);
 
 	display: none;
+	background-image: url(../img/map-popap.png);
 }
 
 .map-close {
@@ -2537,21 +2581,21 @@ textarea {
 /*----Меню при наведении карточки товаров-----*/
 
 .cards-popap {
-	margin-top: 43px;
-	margin-left: 43px;
-	margin-bottom: 51px;
+	padding-top: 44px;
+	margin-left: 41px;
 	width: 135px;
+	height: 170px;
 
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: normal;
-	display: none;
+	 display: none;  
 }
 
-.cards-popap a {
+.cards-popap a,
+.buy-item {
 	display: block;
-	text-align: center;
 
 	padding-left: 4px;
 	border-radius: 3px;
@@ -2560,7 +2604,7 @@ textarea {
 .buy-item {
 	-webkit-box-shadow: inset 0 -3px 0 #367315;
 	box-shadow: inset 0 -3px 0 #367315;
-	margin-bottom: 9px;
+	margin-bottom: 11px;
 	padding-top: 12px;
 	padding-bottom: 7px;
 
@@ -2568,6 +2612,13 @@ textarea {
 	background-image: url(../img/icon-cart-2.svg);
 	background-repeat: no-repeat;
 	background-position: 14px 10px;
+
+	border: none;
+	width: 100%;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #ffffff;
+	padding-left: 9px;
 }
 
 .buy-item:hover {
